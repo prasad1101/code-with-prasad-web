@@ -234,6 +234,118 @@
       ]
     },
     {
+      "slug": "typescript",
+      "title": "TypeScript Tutorial",
+      "language": "TypeScript",
+      "icon": "typescript",
+      "category": "Languages",
+      "description": "Add static types to JavaScript: from basic annotations and interfaces to generics, mapped and conditional types, runtime validation and TypeScript at scale.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to TypeScript"
+            },
+            {
+              "slug": "basic-types",
+              "title": "Basic Types"
+            },
+            {
+              "slug": "functions",
+              "title": "Typing Functions"
+            },
+            {
+              "slug": "objects-and-interfaces",
+              "title": "Objects, Types and Interfaces"
+            }
+          ]
+        },
+        {
+          "title": "Core Type System",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "union-types-and-narrowing",
+              "title": "Union Types and Narrowing"
+            },
+            {
+              "slug": "enums-and-const-assertions",
+              "title": "Enums, as const and satisfies"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes in TypeScript"
+            },
+            {
+              "slug": "generics",
+              "title": "Generics"
+            },
+            {
+              "slug": "modules-and-declarations",
+              "title": "Modules and Declaration Files"
+            },
+            {
+              "slug": "tsconfig",
+              "title": "Configuring tsconfig.json"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Types",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "utility-types",
+              "title": "Utility Types"
+            },
+            {
+              "slug": "keyof-typeof-and-indexed-access",
+              "title": "keyof, typeof and Indexed Access"
+            },
+            {
+              "slug": "mapped-types",
+              "title": "Mapped Types"
+            },
+            {
+              "slug": "conditional-types",
+              "title": "Conditional Types and infer"
+            },
+            {
+              "slug": "template-literal-types",
+              "title": "Template Literal Types"
+            }
+          ]
+        },
+        {
+          "title": "Expert TypeScript",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "advanced-type-patterns",
+              "title": "Advanced Type Patterns"
+            },
+            {
+              "slug": "runtime-validation",
+              "title": "Runtime Validation"
+            },
+            {
+              "slug": "decorators",
+              "title": "Decorators"
+            },
+            {
+              "slug": "typescript-at-scale",
+              "title": "TypeScript at Scale"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "python",
       "title": "Python Tutorial",
       "language": "Python",

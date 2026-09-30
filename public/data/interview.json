@@ -7,6 +7,14 @@
       "category": "Languages",
       "description": "Types, scope, closures, this, prototypes, the event loop, promises, performance and security.",
       "draft": false
+    },
+    {
+      "slug": "typescript",
+      "title": "TypeScript",
+      "icon": "typescript",
+      "category": "Languages",
+      "description": "Type system fundamentals, generics, narrowing, utility, mapped and conditional types, and TypeScript at scale.",
+      "draft": false
     }
   ]
 }
