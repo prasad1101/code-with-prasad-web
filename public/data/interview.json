@@ -17,6 +17,14 @@
       "draft": false
     },
     {
+      "slug": "python",
+      "title": "Python",
+      "icon": "python",
+      "category": "Languages",
+      "description": "Data types, functions, OOP, generators, decorators, concurrency, asyncio, memory, performance and packaging.",
+      "draft": false
+    },
+    {
       "slug": "angular",
       "title": "Angular",
       "icon": "angular",

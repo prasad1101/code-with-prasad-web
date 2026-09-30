@@ -350,12 +350,14 @@
       "title": "Python Tutorial",
       "language": "Python",
       "icon": "python",
-      "description": "Start programming with Python: variables, strings, control flow, lists, dictionaries, functions, modules, error handling and classes — with examples you can run.",
+      "category": "Languages",
+      "description": "Python from your first program to files, comprehensions, OOP, decorators, type hints, testing, concurrency, asyncio, performance, packaging and internals.",
       "updatedAt": "2026-09-30",
       "draft": false,
       "chapters": [
         {
           "title": "Getting Started",
+          "level": "Beginner",
           "lessons": [
             {
               "slug": "introduction",
@@ -369,6 +371,7 @@
         },
         {
           "title": "Fundamentals",
+          "level": "Beginner",
           "lessons": [
             {
               "slug": "variables-and-types",
@@ -390,6 +393,7 @@
         },
         {
           "title": "Data Structures",
+          "level": "Beginner",
           "lessons": [
             {
               "slug": "lists-and-tuples",
@@ -403,6 +407,7 @@
         },
         {
           "title": "Functions and Modules",
+          "level": "Intermediate",
           "lessons": [
             {
               "slug": "functions",
@@ -411,12 +416,7 @@
             {
               "slug": "modules",
               "title": "Modules and Packages"
-            }
-          ]
-        },
-        {
-          "title": "Going Further",
-          "lessons": [
+            },
             {
               "slug": "error-handling",
               "title": "Error Handling"
@@ -424,6 +424,80 @@
             {
               "slug": "classes",
               "title": "Classes and Objects"
+            }
+          ]
+        },
+        {
+          "title": "Working with Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "file-handling",
+              "title": "Files, JSON and CSV"
+            },
+            {
+              "slug": "comprehensions-and-generators",
+              "title": "Comprehensions and Generators"
+            },
+            {
+              "slug": "working-with-dates",
+              "title": "Dates, Times and Time Zones"
+            },
+            {
+              "slug": "regular-expressions",
+              "title": "Regular Expressions"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Python",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "advanced-oop",
+              "title": "Advanced Object-Oriented Python"
+            },
+            {
+              "slug": "decorators",
+              "title": "Decorators"
+            },
+            {
+              "slug": "context-managers",
+              "title": "Context Managers"
+            },
+            {
+              "slug": "type-hints",
+              "title": "Type Hints"
+            },
+            {
+              "slug": "testing-with-pytest",
+              "title": "Testing with pytest"
+            }
+          ]
+        },
+        {
+          "title": "Expert Python",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "concurrency",
+              "title": "Concurrency: Threads and Processes"
+            },
+            {
+              "slug": "asyncio",
+              "title": "Asynchronous Python with asyncio"
+            },
+            {
+              "slug": "performance-and-profiling",
+              "title": "Performance and Profiling"
+            },
+            {
+              "slug": "packaging-and-project-structure",
+              "title": "Packaging and Project Structure"
+            },
+            {
+              "slug": "python-internals",
+              "title": "Python Internals"
             }
           ]
         }
