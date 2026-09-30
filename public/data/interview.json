@@ -39,6 +39,14 @@
       "category": "Databases",
       "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
       "draft": false
+    },
+    {
+      "slug": "sql",
+      "title": "SQL",
+      "icon": "sql",
+      "category": "Databases",
+      "description": "Joins, aggregation, NULLs, window functions, CTEs, indexes, transactions, normalisation and query optimisation.",
+      "draft": false
     }
   ]
 }

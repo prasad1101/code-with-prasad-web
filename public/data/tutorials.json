@@ -634,6 +634,122 @@
       ]
     },
     {
+      "slug": "sql",
+      "title": "SQL Tutorial",
+      "language": "SQL",
+      "icon": "sql",
+      "category": "Databases",
+      "description": "Relational databases with PostgreSQL: queries, joins, aggregation, schema design, indexes, window functions, transactions, optimisation and analytics patterns.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to SQL"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup: PostgreSQL and the Sample Database"
+            },
+            {
+              "slug": "select-basics",
+              "title": "SELECT Basics"
+            },
+            {
+              "slug": "filtering",
+              "title": "Filtering Rows and NULL"
+            },
+            {
+              "slug": "aggregate-functions",
+              "title": "Aggregates, GROUP BY and HAVING"
+            }
+          ]
+        },
+        {
+          "title": "Combining Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "joins",
+              "title": "Joins"
+            },
+            {
+              "slug": "subqueries",
+              "title": "Subqueries"
+            },
+            {
+              "slug": "set-operations-and-case",
+              "title": "Set Operations, CASE and COALESCE"
+            },
+            {
+              "slug": "creating-tables",
+              "title": "Creating Tables and Constraints"
+            },
+            {
+              "slug": "modifying-data",
+              "title": "Inserting, Updating and Deleting"
+            },
+            {
+              "slug": "normalization",
+              "title": "Normalisation and Database Design"
+            },
+            {
+              "slug": "indexes",
+              "title": "Indexes"
+            }
+          ]
+        },
+        {
+          "title": "Advanced SQL",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "ctes-and-recursive-queries",
+              "title": "CTEs and Recursive Queries"
+            },
+            {
+              "slug": "window-functions",
+              "title": "Window Functions"
+            },
+            {
+              "slug": "transactions-and-isolation",
+              "title": "Transactions and Isolation"
+            },
+            {
+              "slug": "views-functions-and-procedures",
+              "title": "Views, Functions and Procedures"
+            },
+            {
+              "slug": "json-in-postgresql",
+              "title": "JSON in PostgreSQL"
+            }
+          ]
+        },
+        {
+          "title": "Expert SQL",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "query-optimization",
+              "title": "Query Optimisation with EXPLAIN"
+            },
+            {
+              "slug": "analytics-patterns",
+              "title": "Analytics Patterns"
+            },
+            {
+              "slug": "database-design-at-scale",
+              "title": "Database Design at Scale"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "mongodb",
       "title": "MongoDB Tutorial",
       "language": "MongoDB",
