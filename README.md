@@ -1,6 +1,6 @@
 # Code with Prasad
 
-Personal portfolio, technical blog and step-by-step programming tutorials for **Prasad Pawar** — a static React site hosted on GitHub Pages.
+Personal portfolio, technical blog, step-by-step programming tutorials (beginner → expert) and interview preparation for **Prasad Pawar** — a static React site hosted on GitHub Pages.
 
 **Live:** https://prasad1101.github.io/code-with-prasad-web/
 
@@ -154,6 +154,41 @@ Tutorials are organised as **tutorial → chapters → lessons**, like Tutorials
    ```
 
 Readers can mark lessons complete; progress is kept in their browser's `localStorage`.
+
+## Adding interview questions
+
+Interview prep lives in its own section (`/#/interview`), separate from tutorials.
+
+1. Each topic is registered in `public/data/interview.json`:
+
+   ```json
+   { "slug": "python", "title": "Python", "icon": "python", "category": "Languages", "description": "…", "draft": false }
+   ```
+
+2. Its questions live in `public/content/interview/<slug>.md`. Every `## ` heading starts a new question; the optional line below it sets the level and tags; everything after is the Markdown answer (use `###` for sub-headings inside answers):
+
+   ````markdown
+   ## What is a closure?
+   Level: Intermediate | Tags: functions, scope
+
+   A closure is a function together with the variables from the scope where it was defined…
+
+   ```js
+   const counter = createCounter()
+   ```
+   ````
+
+   Levels: `Beginner`, `Intermediate`, `Advanced`, `Expert`. Question ids (used in deep links) are generated from the question text, so avoid renaming published questions.
+
+## Tutorial levels, categories and learning paths
+
+- `tutorials[].category` groups courses on the Tutorials page (e.g. `Languages`, `Frontend`, `Backend`, `Databases`, `Data`).
+- `chapters[].level` (`Beginner` → `Expert`) shows a badge on each chapter and lesson, and the course card shows the range.
+- `paths` in `tutorials.json` defines learning paths shown at the top of the Tutorials page:
+
+  ```json
+  { "slug": "mern", "title": "MERN stack developer", "description": "…", "tutorials": ["javascript", "typescript", "nodejs", "express", "mongodb", "react"] }
+  ```
 
 ## Schemas
 
