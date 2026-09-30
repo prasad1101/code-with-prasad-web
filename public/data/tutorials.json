@@ -1,0 +1,94 @@
+{
+  "tutorials": [
+    {
+      "slug": "javascript",
+      "title": "JavaScript Tutorial",
+      "language": "JavaScript",
+      "icon": "javascript",
+      "level": "Beginner → Intermediate",
+      "description": "Learn the language of the web from scratch: variables, types, control flow, functions, arrays, objects and asynchronous code with promises and async/await.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "lessons": [
+            { "slug": "introduction", "title": "Introduction to JavaScript" },
+            { "slug": "setup", "title": "Setup and Your First Program" }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "lessons": [
+            { "slug": "variables", "title": "Variables: let, const and var" },
+            { "slug": "data-types", "title": "Data Types" },
+            { "slug": "operators", "title": "Operators" },
+            { "slug": "conditionals", "title": "Conditionals: if, else and switch" },
+            { "slug": "loops", "title": "Loops" }
+          ]
+        },
+        {
+          "title": "Functions and Data",
+          "lessons": [
+            { "slug": "functions", "title": "Functions" },
+            { "slug": "arrays", "title": "Arrays" },
+            { "slug": "objects", "title": "Objects" }
+          ]
+        },
+        {
+          "title": "Asynchronous JavaScript",
+          "lessons": [{ "slug": "async", "title": "Callbacks, Promises and async/await" }]
+        }
+      ]
+    },
+    {
+      "slug": "python",
+      "title": "Python Tutorial",
+      "language": "Python",
+      "icon": "python",
+      "level": "Beginner → Intermediate",
+      "description": "Start programming with Python: variables, strings, control flow, lists, dictionaries, functions, modules, error handling and classes — with examples you can run.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "lessons": [
+            { "slug": "introduction", "title": "Introduction to Python" },
+            { "slug": "setup", "title": "Installing Python and Your First Program" }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "lessons": [
+            { "slug": "variables-and-types", "title": "Variables and Data Types" },
+            { "slug": "strings", "title": "Working with Strings" },
+            { "slug": "conditionals", "title": "Conditionals" },
+            { "slug": "loops", "title": "Loops" }
+          ]
+        },
+        {
+          "title": "Data Structures",
+          "lessons": [
+            { "slug": "lists-and-tuples", "title": "Lists and Tuples" },
+            { "slug": "dictionaries-and-sets", "title": "Dictionaries and Sets" }
+          ]
+        },
+        {
+          "title": "Functions and Modules",
+          "lessons": [
+            { "slug": "functions", "title": "Functions" },
+            { "slug": "modules", "title": "Modules and Packages" }
+          ]
+        },
+        {
+          "title": "Going Further",
+          "lessons": [
+            { "slug": "error-handling", "title": "Error Handling" },
+            { "slug": "classes", "title": "Classes and Objects" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "siteTitle": "Code with Prasad",
+    "tagline": "Portfolio, blog and step-by-step tutorials from a full stack developer.",
+    "description": "Prasad Pawar — full stack developer (MEAN / MERN) with 8+ years of experience. Portfolio, technical blog and free programming tutorials.",
+    "ogImage": "TODO: add a 1200x630 social preview image URL",
+    "themeDefault": "dark"
+  },
+  "profile": {
+    "name": "Prasad Pawar",
+    "role": "Full Stack Developer (MEAN / MERN)",
+    "yearsOfExperience": 8,
+    "location": "TODO: add location from LinkedIn PDF",
+    "avatarUrl": "images/prasad-photo.jpg",
+    "resumeUrl": "TODO: add resume URL",
+    "availableForWork": true,
+    "typingPhrases": [
+      "Node.js",
+      "React",
+      "Angular",
+      "MongoDB",
+      "Express",
+      "System Design"
+    ],
+    "summary": "I'm a full stack developer with 8+ years of experience building web applications on the MEAN and MERN stacks — Node.js and Express on the server, React and Angular in the browser, and MongoDB for data.\n\nOn this site I share what I've learned along the way: in-depth blog posts on the JavaScript ecosystem and step-by-step tutorials for people starting out."
+  },
+  "socials": [
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/prasadkpawar/"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/prasad1101"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Years experience",
+      "value": "8+"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Angular",
+          "icon": "angular"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        },
+        {
+          "name": "Express",
+          "icon": "express"
+        }
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        }
+      ]
+    }
+  ],
+  "experience": [],
+  "education": [],
+  "projects": [
+    {
+      "slug": "code-with-prasad-web",
+      "title": "Code with Prasad",
+      "summary": "This site: a portfolio, technical blog and tutorials platform built as a static React app. Content lives in versioned JSON and Markdown and deploys to GitHub Pages through GitHub Actions.",
+      "image": "",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "GitHub Actions"
+      ],
+      "liveUrl": "https://prasad1101.github.io/code-with-prasad-web/",
+      "repoUrl": "https://github.com/prasad1101/code-with-prasad-web",
+      "featured": true
+    }
+  ],
+  "testimonials": [],
+  "certifications": [],
+  "contact": {
+    "email": "TODO: add public contact email",
+    "formEndpoint": "TODO: add Formspree endpoint (https://formspree.io/f/xxxx) or leave empty"
+  }
+}
