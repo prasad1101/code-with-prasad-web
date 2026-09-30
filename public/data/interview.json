@@ -31,6 +31,14 @@
       "category": "Backend",
       "description": "Routing, middleware, error handling, validation, authentication, security, testing and performance for Express APIs.",
       "draft": false
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB",
+      "icon": "mongodb",
+      "category": "Databases",
+      "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
+      "draft": false
     }
   ]
 }

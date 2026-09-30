@@ -632,6 +632,114 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB Tutorial",
+      "language": "MongoDB",
+      "icon": "mongodb",
+      "category": "Databases",
+      "description": "Document databases from CRUD and query operators to data modelling, indexes, aggregation, transactions, replication, sharding, performance and operations.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to MongoDB"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup: Atlas, Docker and mongosh"
+            },
+            {
+              "slug": "crud-basics",
+              "title": "CRUD Operations"
+            },
+            {
+              "slug": "query-operators",
+              "title": "Query Operators"
+            }
+          ]
+        },
+        {
+          "title": "Working with Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "projection-sorting-and-pagination",
+              "title": "Projection, Sorting and Pagination"
+            },
+            {
+              "slug": "update-operators",
+              "title": "Update Operators"
+            },
+            {
+              "slug": "data-modeling",
+              "title": "Data Modelling: Embed or Reference"
+            },
+            {
+              "slug": "schema-validation",
+              "title": "Schema Validation"
+            },
+            {
+              "slug": "indexes",
+              "title": "Indexes"
+            }
+          ]
+        },
+        {
+          "title": "Aggregation and Applications",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "aggregation-basics",
+              "title": "Aggregation Pipeline Basics"
+            },
+            {
+              "slug": "aggregation-advanced",
+              "title": "Advanced Aggregation"
+            },
+            {
+              "slug": "schema-design-patterns",
+              "title": "Schema Design Patterns"
+            },
+            {
+              "slug": "nodejs-driver",
+              "title": "Using the Node.js Driver"
+            },
+            {
+              "slug": "transactions",
+              "title": "Transactions"
+            }
+          ]
+        },
+        {
+          "title": "Scale and Operations",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "replication-and-sharding",
+              "title": "Replication and Sharding"
+            },
+            {
+              "slug": "performance-tuning",
+              "title": "Performance Tuning"
+            },
+            {
+              "slug": "change-streams",
+              "title": "Change Streams"
+            },
+            {
+              "slug": "security-and-operations",
+              "title": "Security and Operations"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
