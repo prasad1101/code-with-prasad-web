@@ -1,0 +1,41 @@
+{
+  "categories": ["JavaScript", "Node.js", "React", "Angular", "MongoDB", "DevOps", "System Design"],
+  "posts": [
+    {
+      "slug": "mongodb-indexing-strategies",
+      "title": "MongoDB Indexing Strategies That Actually Matter",
+      "excerpt": "The ESR rule, reading explain() output, covered queries, partial and TTL indexes — and how to find the indexes that are costing you writes for nothing.",
+      "coverImage": "",
+      "tags": ["mongodb", "performance", "databases"],
+      "category": "MongoDB",
+      "publishedAt": "2026-09-26",
+      "updatedAt": "",
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "react-server-components-vs-ssr",
+      "title": "React Server Components vs. Classic SSR",
+      "excerpt": "Both render on the server, but they solve different problems. What actually gets shipped to the browser, what hydrates, and when to reach for each.",
+      "coverImage": "",
+      "tags": ["react", "ssr", "performance"],
+      "category": "React",
+      "publishedAt": "2026-09-18",
+      "updatedAt": "",
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "nodejs-event-loop",
+      "title": "Understanding the Node.js Event Loop",
+      "excerpt": "Phases, microtasks, setImmediate vs. setTimeout, the libuv thread pool — a practical mental model of how Node.js runs your code, and how to avoid blocking it.",
+      "coverImage": "",
+      "tags": ["nodejs", "javascript", "performance"],
+      "category": "Node.js",
+      "publishedAt": "2026-09-10",
+      "updatedAt": "",
+      "featured": true,
+      "draft": false
+    }
+  ]
+}

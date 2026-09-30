@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "siteTitle": "Code with Prasad",
+    "tagline": "Tutorials, interview prep, developer tools and a blog from a Senior Lead Developer.",
+    "description": "Free coding tutorials from beginner to expert, interview questions with explained answers and online developer tools by Prasad Pawar, Senior Lead Developer.",
+    "ogImage": "/images/og/default.png",
+    "themeDefault": "dark"
+  },
+  "profile": {
+    "name": "Prasad Pawar",
+    "role": "Senior Lead Developer · Angular • React • Node.js • MongoDB",
+    "yearsOfExperience": 8,
+    "location": "Pune, Maharashtra, India",
+    "avatarUrl": "images/prasad-photo.jpg",
+    "resumeUrl": "TODO: add resume URL",
+    "availableForWork": true,
+    "typingPhrases": [
+      "Angular",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RxJS",
+      "Frontend Architecture"
+    ],
+    "summary": "I'm a Senior Lead Developer with 8+ years of experience building scalable, high-performance enterprise web applications with Angular, React, Node.js, Express.js and MongoDB. I specialise in frontend architecture, performance optimisation and leading engineering teams through complex enterprise delivery — I currently lead a team of 8 developers at a global financial technology company.\n\nSome highlights:\n\n- Improved UI performance of enterprise Angular applications by 35–40% through lazy loading, code splitting and change-detection optimisation.\n- Built reusable component libraries that sped up development by 30%+ across multiple teams.\n- Designed RESTful APIs with Node.js and Express.js for high-volume data processing.\n- Implemented security best practices against XSS and CSRF, with secure API communication for enterprise compliance.\n- Led a greenfield enterprise platform from concept to production, achieving strong user adoption.\n\nI'm open to relocating to Dubai (UAE) or Germany."
+  },
+  "socials": [
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/prasadkpawar/"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/prasad1101"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Years experience",
+      "value": "8+"
+    },
+    {
+      "label": "Developers led",
+      "value": "8"
+    },
+    {
+      "label": "Faster enterprise UIs",
+      "value": "35–40%"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Angular",
+          "icon": "angular"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "RxJS",
+          "icon": "rxjs"
+        },
+        {
+          "name": "Frontend Architecture",
+          "icon": "architecture"
+        },
+        {
+          "name": "Component Libraries",
+          "icon": "components"
+        },
+        {
+          "name": "Performance Optimisation",
+          "icon": "performance"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "Node.js",
+          "icon": "nodejs"
+        },
+        {
+          "name": "Express.js",
+          "icon": "express"
+        },
+        {
+          "name": "REST APIs",
+          "icon": "api"
+        },
+        {
+          "name": "Microservices",
+          "icon": "microservices"
+        }
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        }
+      ]
+    },
+    {
+      "category": "Cloud / DevOps",
+      "items": [
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "Bitbucket Pipelines",
+          "icon": "bitbucket"
+        },
+        {
+          "name": "CI/CD",
+          "icon": "cicd"
+        }
+      ]
+    },
+    {
+      "category": "Security & Auth",
+      "items": [
+        {
+          "name": "JWT",
+          "icon": "jwt"
+        },
+        {
+          "name": "OAuth",
+          "icon": "auth"
+        },
+        {
+          "name": "SSO",
+          "icon": "sso"
+        },
+        {
+          "name": "XSS / CSRF / CSP",
+          "icon": "security"
+        }
+      ]
+    },
+    {
+      "category": "Leadership",
+      "items": [
+        {
+          "name": "Leading Development Teams",
+          "icon": "team"
+        },
+        {
+          "name": "Mentoring",
+          "icon": "mentoring"
+        },
+        {
+          "name": "Coding Standards",
+          "icon": "standards"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "FIS",
+      "role": "Senior Lead Developer",
+      "start": "2024-07",
+      "end": "present",
+      "location": "Pune",
+      "highlights": [
+        "Lead a cross-functional team of 8 developers delivering enterprise-grade financial services applications.",
+        "Architected a greenfield enterprise platform from concept through production, achieving strong user adoption.",
+        "Established reusable component libraries, coding standards and engineering best practices adopted across the team.",
+        "Implemented CI/CD pipelines (Jenkins, Bitbucket Pipelines) and enterprise authentication (JWT, OAuth, SSO)."
+      ],
+      "tech": [
+        "Jenkins",
+        "Bitbucket Pipelines",
+        "JWT",
+        "OAuth",
+        "SSO"
+      ]
+    },
+    {
+      "company": "Ithena Technologies",
+      "role": "Technical Lead / Senior Frontend Engineer",
+      "start": "2020-03",
+      "end": "2024-07",
+      "location": "Pune",
+      "highlights": [
+        "Led a team of developers delivering enterprise software solutions on the MEAN stack.",
+        "Designed a scalable Angular architecture and reusable design systems adopted across multiple product lines.",
+        "Optimised REST APIs and MongoDB query performance for high-traffic fleet tracking platforms.",
+        "Mentored developers on best practices and served as the primary technical point of contact for clients."
+      ],
+      "tech": [
+        "Angular",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST APIs"
+      ]
+    },
+    {
+      "company": "CoffeeBeans Technologies",
+      "role": "Full-stack Developer",
+      "start": "2019-03",
+      "end": "2020-03",
+      "location": "Pune, Maharashtra, India",
+      "highlights": [
+        "Developed and maintained enterprise web applications on the MEAN stack.",
+        "Contributed to Apple News research initiatives and built solutions on the BigBlueButton platform.",
+        "Participated in code reviews and modernised legacy Angular applications to support product growth."
+      ],
+      "tech": [
+        "MongoDB",
+        "Express.js",
+        "Angular",
+        "Node.js",
+        "BigBlueButton"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "role": "MEAN Stack Developer",
+      "start": "2018-03",
+      "end": "2019-03",
+      "location": "Pune / Pimpri-Chinchwad",
+      "highlights": [
+        "Built custom web applications with MongoDB, Express.js, Angular and Node.js to meet client needs.",
+        "Worked closely with clients to understand requirements and deliver tailored solutions.",
+        "Delivered within project timelines and budgets, and provided ongoing support and maintenance."
+      ],
+      "tech": [
+        "MongoDB",
+        "Express.js",
+        "Angular",
+        "Node.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Pune Vidyarthi Griha's College of Engineering, Nashik",
+      "degree": "Bachelor of Engineering",
+      "field": "Computer Software Engineering",
+      "start": "2016",
+      "end": "2019"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "code-with-prasad-web",
+      "title": "Code with Prasad",
+      "summary": "This site: a portfolio, technical blog and tutorials platform built as a static React app. Content lives in versioned JSON and Markdown and deploys to GitHub Pages through GitHub Actions.",
+      "image": "",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "GitHub Actions"
+      ],
+      "liveUrl": "https://codewithprasad.in/",
+      "repoUrl": "https://github.com/prasad1101/code-with-prasad-web",
+      "featured": true
+    }
+  ],
+  "testimonials": [],
+  "certifications": [],
+  "contact": {
+    "email": "prasad.k.pawar@gmail.com",
+    "formEndpoint": "TODO: add Formspree endpoint (https://formspree.io/f/xxxx) or leave empty"
+  }
+}

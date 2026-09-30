@@ -1,0 +1,1395 @@
+{
+  "paths": [
+    {
+      "slug": "mean",
+      "title": "MEAN stack developer",
+      "description": "MongoDB, Express, Angular and Node.js — the full stack for enterprise web apps.",
+      "tutorials": [
+        "javascript",
+        "typescript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "angular"
+      ]
+    },
+    {
+      "slug": "mern",
+      "title": "MERN stack developer",
+      "description": "Build full-stack apps with MongoDB, Express, React and Node.js.",
+      "tutorials": [
+        "javascript",
+        "typescript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "react"
+      ]
+    },
+    {
+      "slug": "data-analyst",
+      "title": "Data analyst",
+      "description": "Query, clean, analyse and visualise data to answer business questions.",
+      "tutorials": [
+        "python",
+        "sql",
+        "data-analytics"
+      ]
+    },
+    {
+      "slug": "data-engineer",
+      "title": "Data engineer",
+      "description": "Design and run reliable pipelines, warehouses and streaming systems.",
+      "tutorials": [
+        "python",
+        "sql",
+        "mongodb",
+        "data-engineering"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "slug": "javascript",
+      "title": "JavaScript Tutorial",
+      "language": "JavaScript",
+      "icon": "javascript",
+      "category": "Languages",
+      "description": "The language of the web, from your first variable to closures, the event loop, prototypes, performance, design patterns, testing and security.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to JavaScript"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup and Your First Program"
+            }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "variables",
+              "title": "Variables: let, const and var"
+            },
+            {
+              "slug": "data-types",
+              "title": "Data Types"
+            },
+            {
+              "slug": "operators",
+              "title": "Operators"
+            },
+            {
+              "slug": "conditionals",
+              "title": "Conditionals: if, else and switch"
+            },
+            {
+              "slug": "loops",
+              "title": "Loops"
+            }
+          ]
+        },
+        {
+          "title": "Functions and Data",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "functions",
+              "title": "Functions"
+            },
+            {
+              "slug": "arrays",
+              "title": "Arrays"
+            },
+            {
+              "slug": "objects",
+              "title": "Objects"
+            }
+          ]
+        },
+        {
+          "title": "Working with the Browser",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "dom",
+              "title": "The DOM"
+            },
+            {
+              "slug": "events",
+              "title": "Events"
+            },
+            {
+              "slug": "browser-storage",
+              "title": "Browser Storage"
+            }
+          ]
+        },
+        {
+          "title": "Modern JavaScript",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "modules",
+              "title": "ES Modules"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "iterators-and-generators",
+              "title": "Iterators and Generators"
+            },
+            {
+              "slug": "maps-and-sets",
+              "title": "Map, Set and Weak Collections"
+            },
+            {
+              "slug": "async",
+              "title": "Callbacks, Promises and async/await"
+            }
+          ]
+        },
+        {
+          "title": "Under the Hood",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "execution-context-and-hoisting",
+              "title": "Execution Context and Hoisting"
+            },
+            {
+              "slug": "scope-and-closures",
+              "title": "Scope and Closures"
+            },
+            {
+              "slug": "this-keyword",
+              "title": "The this Keyword"
+            },
+            {
+              "slug": "prototypes-and-inheritance",
+              "title": "Prototypes and Inheritance"
+            },
+            {
+              "slug": "event-loop",
+              "title": "The Event Loop"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Patterns",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "promise-patterns",
+              "title": "Advanced Promise Patterns"
+            },
+            {
+              "slug": "functional-programming",
+              "title": "Functional Programming"
+            }
+          ]
+        },
+        {
+          "title": "Expert Topics",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "memory-and-performance",
+              "title": "Memory and Performance"
+            },
+            {
+              "slug": "proxy-and-reflect",
+              "title": "Metaprogramming: Proxy and Reflect"
+            },
+            {
+              "slug": "design-patterns",
+              "title": "Design Patterns"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing JavaScript"
+            },
+            {
+              "slug": "web-security",
+              "title": "Web Security for JavaScript Developers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "typescript",
+      "title": "TypeScript Tutorial",
+      "language": "TypeScript",
+      "icon": "typescript",
+      "category": "Languages",
+      "description": "Add static types to JavaScript: from basic annotations and interfaces to generics, mapped and conditional types, runtime validation and TypeScript at scale.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to TypeScript"
+            },
+            {
+              "slug": "basic-types",
+              "title": "Basic Types"
+            },
+            {
+              "slug": "functions",
+              "title": "Typing Functions"
+            },
+            {
+              "slug": "objects-and-interfaces",
+              "title": "Objects, Types and Interfaces"
+            }
+          ]
+        },
+        {
+          "title": "Core Type System",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "union-types-and-narrowing",
+              "title": "Union Types and Narrowing"
+            },
+            {
+              "slug": "enums-and-const-assertions",
+              "title": "Enums, as const and satisfies"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes in TypeScript"
+            },
+            {
+              "slug": "generics",
+              "title": "Generics"
+            },
+            {
+              "slug": "modules-and-declarations",
+              "title": "Modules and Declaration Files"
+            },
+            {
+              "slug": "tsconfig",
+              "title": "Configuring tsconfig.json"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Types",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "utility-types",
+              "title": "Utility Types"
+            },
+            {
+              "slug": "keyof-typeof-and-indexed-access",
+              "title": "keyof, typeof and Indexed Access"
+            },
+            {
+              "slug": "mapped-types",
+              "title": "Mapped Types"
+            },
+            {
+              "slug": "conditional-types",
+              "title": "Conditional Types and infer"
+            },
+            {
+              "slug": "template-literal-types",
+              "title": "Template Literal Types"
+            }
+          ]
+        },
+        {
+          "title": "Expert TypeScript",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "advanced-type-patterns",
+              "title": "Advanced Type Patterns"
+            },
+            {
+              "slug": "runtime-validation",
+              "title": "Runtime Validation"
+            },
+            {
+              "slug": "decorators",
+              "title": "Decorators"
+            },
+            {
+              "slug": "typescript-at-scale",
+              "title": "TypeScript at Scale"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "python",
+      "title": "Python Tutorial",
+      "language": "Python",
+      "icon": "python",
+      "category": "Languages",
+      "description": "Python from your first program to files, comprehensions, OOP, decorators, type hints, testing, concurrency, asyncio, performance, packaging and internals.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Python"
+            },
+            {
+              "slug": "setup",
+              "title": "Installing Python and Your First Program"
+            }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "variables-and-types",
+              "title": "Variables and Data Types"
+            },
+            {
+              "slug": "strings",
+              "title": "Working with Strings"
+            },
+            {
+              "slug": "conditionals",
+              "title": "Conditionals"
+            },
+            {
+              "slug": "loops",
+              "title": "Loops"
+            }
+          ]
+        },
+        {
+          "title": "Data Structures",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "lists-and-tuples",
+              "title": "Lists and Tuples"
+            },
+            {
+              "slug": "dictionaries-and-sets",
+              "title": "Dictionaries and Sets"
+            }
+          ]
+        },
+        {
+          "title": "Functions and Modules",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "functions",
+              "title": "Functions"
+            },
+            {
+              "slug": "modules",
+              "title": "Modules and Packages"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes and Objects"
+            }
+          ]
+        },
+        {
+          "title": "Working with Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "file-handling",
+              "title": "Files, JSON and CSV"
+            },
+            {
+              "slug": "comprehensions-and-generators",
+              "title": "Comprehensions and Generators"
+            },
+            {
+              "slug": "working-with-dates",
+              "title": "Dates, Times and Time Zones"
+            },
+            {
+              "slug": "regular-expressions",
+              "title": "Regular Expressions"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Python",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "advanced-oop",
+              "title": "Advanced Object-Oriented Python"
+            },
+            {
+              "slug": "decorators",
+              "title": "Decorators"
+            },
+            {
+              "slug": "context-managers",
+              "title": "Context Managers"
+            },
+            {
+              "slug": "type-hints",
+              "title": "Type Hints"
+            },
+            {
+              "slug": "testing-with-pytest",
+              "title": "Testing with pytest"
+            }
+          ]
+        },
+        {
+          "title": "Expert Python",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "concurrency",
+              "title": "Concurrency: Threads and Processes"
+            },
+            {
+              "slug": "asyncio",
+              "title": "Asynchronous Python with asyncio"
+            },
+            {
+              "slug": "performance-and-profiling",
+              "title": "Performance and Profiling"
+            },
+            {
+              "slug": "packaging-and-project-structure",
+              "title": "Packaging and Project Structure"
+            },
+            {
+              "slug": "python-internals",
+              "title": "Python Internals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "angular",
+      "title": "Angular Tutorial",
+      "language": "Angular",
+      "icon": "angular",
+      "category": "Frontend",
+      "description": "Modern Angular from components and signals to routing, forms, HTTP, RxJS, change detection, state management, testing, performance, SSR and enterprise architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Angular"
+            },
+            {
+              "slug": "components-and-templates",
+              "title": "Components and Templates"
+            },
+            {
+              "slug": "data-binding",
+              "title": "Data Binding"
+            },
+            {
+              "slug": "control-flow-and-pipes",
+              "title": "Control Flow and Pipes"
+            },
+            {
+              "slug": "inputs-and-outputs",
+              "title": "Component Inputs and Outputs"
+            }
+          ]
+        },
+        {
+          "title": "Core Angular",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "signals",
+              "title": "Signals"
+            },
+            {
+              "slug": "services-and-dependency-injection",
+              "title": "Services and Dependency Injection"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing"
+            },
+            {
+              "slug": "reactive-forms",
+              "title": "Reactive Forms"
+            },
+            {
+              "slug": "http-client",
+              "title": "HTTP and APIs"
+            },
+            {
+              "slug": "rxjs-essentials",
+              "title": "RxJS Essentials"
+            },
+            {
+              "slug": "directives",
+              "title": "Directives"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Angular",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "change-detection",
+              "title": "Change Detection, OnPush and Zoneless"
+            },
+            {
+              "slug": "component-architecture",
+              "title": "Component Architecture"
+            },
+            {
+              "slug": "state-management",
+              "title": "State Management"
+            },
+            {
+              "slug": "lazy-loading-and-defer",
+              "title": "Lazy Loading and @defer"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing Angular Apps"
+            }
+          ]
+        },
+        {
+          "title": "Enterprise Angular",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "performance-optimization",
+              "title": "Performance Optimisation"
+            },
+            {
+              "slug": "security",
+              "title": "Angular Security"
+            },
+            {
+              "slug": "ssr-and-hydration",
+              "title": "SSR and Hydration"
+            },
+            {
+              "slug": "large-scale-architecture",
+              "title": "Large-Scale Architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "react",
+      "title": "React Tutorial",
+      "language": "React",
+      "icon": "react",
+      "category": "Frontend",
+      "description": "Modern React 19 from JSX and hooks to routing, data fetching, performance, Suspense, state management, testing, Server Components and architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to React"
+            },
+            {
+              "slug": "jsx",
+              "title": "JSX"
+            },
+            {
+              "slug": "components-and-props",
+              "title": "Components and Props"
+            },
+            {
+              "slug": "state-and-events",
+              "title": "State and Events"
+            },
+            {
+              "slug": "conditional-rendering-and-lists",
+              "title": "Conditional Rendering and Lists"
+            },
+            {
+              "slug": "forms",
+              "title": "Forms and Actions"
+            }
+          ]
+        },
+        {
+          "title": "Core React",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "effects",
+              "title": "Effects and When Not to Use Them"
+            },
+            {
+              "slug": "refs",
+              "title": "Refs and the DOM"
+            },
+            {
+              "slug": "context",
+              "title": "Context"
+            },
+            {
+              "slug": "reducers",
+              "title": "Managing State with Reducers"
+            },
+            {
+              "slug": "custom-hooks",
+              "title": "Custom Hooks"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing with React Router"
+            },
+            {
+              "slug": "data-fetching",
+              "title": "Data Fetching with TanStack Query"
+            }
+          ]
+        },
+        {
+          "title": "Advanced React",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "performance",
+              "title": "Performance and the React Compiler"
+            },
+            {
+              "slug": "suspense-and-code-splitting",
+              "title": "Suspense and Code Splitting"
+            },
+            {
+              "slug": "state-management",
+              "title": "State Management: Zustand and Redux Toolkit"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing React Apps"
+            },
+            {
+              "slug": "typescript-with-react",
+              "title": "TypeScript with React"
+            }
+          ]
+        },
+        {
+          "title": "Expert React",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "server-components-and-ssr",
+              "title": "Server Components and SSR"
+            },
+            {
+              "slug": "transitions-and-concurrency",
+              "title": "Transitions and Concurrent Rendering"
+            },
+            {
+              "slug": "architecture-and-patterns",
+              "title": "Architecture and Patterns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nodejs",
+      "title": "Node.js Tutorial",
+      "language": "Node.js",
+      "icon": "nodejs",
+      "category": "Backend",
+      "description": "Server-side JavaScript from your first script to streams, the event loop, worker threads, scaling, security, production deployment and architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Node.js"
+            },
+            {
+              "slug": "modules-and-npm",
+              "title": "Modules and npm"
+            },
+            {
+              "slug": "file-system",
+              "title": "Working with Files"
+            }
+          ]
+        },
+        {
+          "title": "Core Concepts",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "events",
+              "title": "Events and EventEmitter"
+            },
+            {
+              "slug": "buffers",
+              "title": "Buffers and Binary Data"
+            },
+            {
+              "slug": "streams",
+              "title": "Streams"
+            },
+            {
+              "slug": "http-server",
+              "title": "Building an HTTP Server"
+            },
+            {
+              "slug": "process-and-environment",
+              "title": "Process, Arguments and Environment"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling in Node.js"
+            },
+            {
+              "slug": "building-a-cli",
+              "title": "Building a Command-Line Tool"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Node.js",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "event-loop-internals",
+              "title": "Event Loop Internals"
+            },
+            {
+              "slug": "worker-threads-and-child-processes",
+              "title": "Worker Threads and Child Processes"
+            },
+            {
+              "slug": "scaling-and-clustering",
+              "title": "Scaling and Clustering"
+            },
+            {
+              "slug": "performance-and-profiling",
+              "title": "Performance and Profiling"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing Node.js Applications"
+            }
+          ]
+        },
+        {
+          "title": "Production Node.js",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "security",
+              "title": "Security Best Practices"
+            },
+            {
+              "slug": "production-deployment",
+              "title": "Production Deployment"
+            },
+            {
+              "slug": "architecture",
+              "title": "Architecture and Microservices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "express",
+      "title": "Express.js Tutorial",
+      "language": "Express",
+      "icon": "express",
+      "category": "Backend",
+      "description": "Build production-ready REST APIs with Express 5: routing, middleware, validation, error handling, MongoDB, JWT auth, uploads, security, testing and real-time features.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Express"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing"
+            },
+            {
+              "slug": "request-and-response",
+              "title": "Request and Response"
+            },
+            {
+              "slug": "middleware",
+              "title": "Middleware"
+            }
+          ]
+        },
+        {
+          "title": "Building APIs",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "building-a-rest-api",
+              "title": "Building a REST API"
+            },
+            {
+              "slug": "validation",
+              "title": "Request Validation"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "mongodb-with-mongoose",
+              "title": "MongoDB with Mongoose"
+            },
+            {
+              "slug": "authentication-with-jwt",
+              "title": "Authentication with JWT"
+            },
+            {
+              "slug": "file-uploads",
+              "title": "File Uploads"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Express",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "security-hardening",
+              "title": "Security Hardening"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing APIs"
+            },
+            {
+              "slug": "project-structure",
+              "title": "Project Structure"
+            }
+          ]
+        },
+        {
+          "title": "Production and Real Time",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "performance-and-production",
+              "title": "Performance and Production"
+            },
+            {
+              "slug": "real-time-with-socket-io",
+              "title": "Real-Time with Socket.IO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sql",
+      "title": "SQL Tutorial",
+      "language": "SQL",
+      "icon": "sql",
+      "category": "Databases",
+      "description": "Relational databases with PostgreSQL: queries, joins, aggregation, schema design, indexes, window functions, transactions, optimisation and analytics patterns.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to SQL"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup: PostgreSQL and the Sample Database"
+            },
+            {
+              "slug": "select-basics",
+              "title": "SELECT Basics"
+            },
+            {
+              "slug": "filtering",
+              "title": "Filtering Rows and NULL"
+            },
+            {
+              "slug": "aggregate-functions",
+              "title": "Aggregates, GROUP BY and HAVING"
+            }
+          ]
+        },
+        {
+          "title": "Combining Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "joins",
+              "title": "Joins"
+            },
+            {
+              "slug": "subqueries",
+              "title": "Subqueries"
+            },
+            {
+              "slug": "set-operations-and-case",
+              "title": "Set Operations, CASE and COALESCE"
+            },
+            {
+              "slug": "creating-tables",
+              "title": "Creating Tables and Constraints"
+            },
+            {
+              "slug": "modifying-data",
+              "title": "Inserting, Updating and Deleting"
+            },
+            {
+              "slug": "normalization",
+              "title": "Normalisation and Database Design"
+            },
+            {
+              "slug": "indexes",
+              "title": "Indexes"
+            }
+          ]
+        },
+        {
+          "title": "Advanced SQL",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "ctes-and-recursive-queries",
+              "title": "CTEs and Recursive Queries"
+            },
+            {
+              "slug": "window-functions",
+              "title": "Window Functions"
+            },
+            {
+              "slug": "transactions-and-isolation",
+              "title": "Transactions and Isolation"
+            },
+            {
+              "slug": "views-functions-and-procedures",
+              "title": "Views, Functions and Procedures"
+            },
+            {
+              "slug": "json-in-postgresql",
+              "title": "JSON in PostgreSQL"
+            }
+          ]
+        },
+        {
+          "title": "Expert SQL",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "query-optimization",
+              "title": "Query Optimisation with EXPLAIN"
+            },
+            {
+              "slug": "analytics-patterns",
+              "title": "Analytics Patterns"
+            },
+            {
+              "slug": "database-design-at-scale",
+              "title": "Database Design at Scale"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB Tutorial",
+      "language": "MongoDB",
+      "icon": "mongodb",
+      "category": "Databases",
+      "description": "Document databases from CRUD and query operators to data modelling, indexes, aggregation, transactions, replication, sharding, performance and operations.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to MongoDB"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup: Atlas, Docker and mongosh"
+            },
+            {
+              "slug": "crud-basics",
+              "title": "CRUD Operations"
+            },
+            {
+              "slug": "query-operators",
+              "title": "Query Operators"
+            }
+          ]
+        },
+        {
+          "title": "Working with Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "projection-sorting-and-pagination",
+              "title": "Projection, Sorting and Pagination"
+            },
+            {
+              "slug": "update-operators",
+              "title": "Update Operators"
+            },
+            {
+              "slug": "data-modeling",
+              "title": "Data Modelling: Embed or Reference"
+            },
+            {
+              "slug": "schema-validation",
+              "title": "Schema Validation"
+            },
+            {
+              "slug": "indexes",
+              "title": "Indexes"
+            }
+          ]
+        },
+        {
+          "title": "Aggregation and Applications",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "aggregation-basics",
+              "title": "Aggregation Pipeline Basics"
+            },
+            {
+              "slug": "aggregation-advanced",
+              "title": "Advanced Aggregation"
+            },
+            {
+              "slug": "schema-design-patterns",
+              "title": "Schema Design Patterns"
+            },
+            {
+              "slug": "nodejs-driver",
+              "title": "Using the Node.js Driver"
+            },
+            {
+              "slug": "transactions",
+              "title": "Transactions"
+            }
+          ]
+        },
+        {
+          "title": "Scale and Operations",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "replication-and-sharding",
+              "title": "Replication and Sharding"
+            },
+            {
+              "slug": "performance-tuning",
+              "title": "Performance Tuning"
+            },
+            {
+              "slug": "change-streams",
+              "title": "Change Streams"
+            },
+            {
+              "slug": "security-and-operations",
+              "title": "Security and Operations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-analytics",
+      "title": "Data Analytics Tutorial",
+      "language": "Data Analytics",
+      "icon": "analytics",
+      "category": "Data",
+      "description": "Analyse data with Python: NumPy and pandas, cleaning, transforming, grouping, joining, time series, visualisation, statistics, A/B testing, SQL and storytelling.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Data Analytics"
+            },
+            {
+              "slug": "environment-setup",
+              "title": "Setting Up: Python, Jupyter and Libraries"
+            },
+            {
+              "slug": "numpy-basics",
+              "title": "NumPy Essentials"
+            },
+            {
+              "slug": "pandas-basics",
+              "title": "pandas Basics: Series and DataFrames"
+            },
+            {
+              "slug": "loading-data",
+              "title": "Loading and Saving Data"
+            }
+          ]
+        },
+        {
+          "title": "Wrangling Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "data-cleaning",
+              "title": "Data Cleaning"
+            },
+            {
+              "slug": "transforming-data",
+              "title": "Transforming Data"
+            },
+            {
+              "slug": "grouping-and-aggregation",
+              "title": "Grouping and Aggregation"
+            },
+            {
+              "slug": "merging-and-joining",
+              "title": "Merging and Joining"
+            },
+            {
+              "slug": "reshaping-data",
+              "title": "Reshaping: Pivot and Melt"
+            },
+            {
+              "slug": "time-series",
+              "title": "Time Series Analysis"
+            },
+            {
+              "slug": "data-visualization",
+              "title": "Data Visualisation"
+            }
+          ]
+        },
+        {
+          "title": "Statistics for Analysts",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "descriptive-statistics",
+              "title": "Descriptive Statistics"
+            },
+            {
+              "slug": "hypothesis-testing",
+              "title": "Hypothesis Testing"
+            },
+            {
+              "slug": "ab-testing",
+              "title": "A/B Testing"
+            },
+            {
+              "slug": "sql-for-analysts",
+              "title": "SQL and DuckDB for Analysts"
+            }
+          ]
+        },
+        {
+          "title": "Analytics in Practice",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "large-datasets",
+              "title": "Working with Large Datasets"
+            },
+            {
+              "slug": "dashboards-and-storytelling",
+              "title": "Dashboards and Data Storytelling"
+            },
+            {
+              "slug": "end-to-end-case-study",
+              "title": "End-to-End Case Study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-engineering",
+      "title": "Data Engineering Tutorial",
+      "language": "Data Engineering",
+      "icon": "dataengineering",
+      "category": "Data",
+      "description": "Design and build reliable data platforms: architectures, file formats, modelling, batch ETL/ELT, orchestration, data quality, dbt, warehouses, Spark, streaming, CDC, lakehouses and governance.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Foundations",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Data Engineering"
+            },
+            {
+              "slug": "data-architecture",
+              "title": "Data Architecture: Warehouses, Lakes and Lakehouses"
+            },
+            {
+              "slug": "file-formats",
+              "title": "File Formats and Partitioning"
+            },
+            {
+              "slug": "python-for-data-engineering",
+              "title": "Python for Data Engineering"
+            }
+          ]
+        },
+        {
+          "title": "Batch Data Pipelines",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "data-modeling",
+              "title": "Data Modelling for Analytics"
+            },
+            {
+              "slug": "etl-and-elt",
+              "title": "ETL, ELT and Incremental Loads"
+            },
+            {
+              "slug": "orchestration-with-airflow",
+              "title": "Orchestration with Airflow"
+            },
+            {
+              "slug": "data-quality",
+              "title": "Data Quality and Testing"
+            },
+            {
+              "slug": "dbt",
+              "title": "Transformations with dbt"
+            },
+            {
+              "slug": "cloud-data-warehouses",
+              "title": "Cloud Data Warehouses"
+            }
+          ]
+        },
+        {
+          "title": "Big Data and Streaming",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "spark-fundamentals",
+              "title": "Apache Spark Fundamentals"
+            },
+            {
+              "slug": "spark-optimization",
+              "title": "Optimising Spark Jobs"
+            },
+            {
+              "slug": "streaming-with-kafka",
+              "title": "Streaming with Kafka"
+            },
+            {
+              "slug": "stream-processing",
+              "title": "Stream Processing"
+            },
+            {
+              "slug": "change-data-capture",
+              "title": "Change Data Capture"
+            }
+          ]
+        },
+        {
+          "title": "Data Platforms",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "lakehouse-table-formats",
+              "title": "Lakehouse Table Formats: Delta and Iceberg"
+            },
+            {
+              "slug": "governance-and-security",
+              "title": "Data Governance and Security"
+            },
+            {
+              "slug": "designing-data-platforms",
+              "title": "Designing a Data Platform"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

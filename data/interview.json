@@ -1,0 +1,92 @@
+{
+  "topics": [
+    {
+      "slug": "javascript",
+      "title": "JavaScript",
+      "icon": "javascript",
+      "category": "Languages",
+      "description": "Types, scope, closures, this, prototypes, the event loop, promises, performance and security.",
+      "draft": false
+    },
+    {
+      "slug": "typescript",
+      "title": "TypeScript",
+      "icon": "typescript",
+      "category": "Languages",
+      "description": "Type system fundamentals, generics, narrowing, utility, mapped and conditional types, and TypeScript at scale.",
+      "draft": false
+    },
+    {
+      "slug": "python",
+      "title": "Python",
+      "icon": "python",
+      "category": "Languages",
+      "description": "Data types, functions, OOP, generators, decorators, concurrency, asyncio, memory, performance and packaging.",
+      "draft": false
+    },
+    {
+      "slug": "angular",
+      "title": "Angular",
+      "icon": "angular",
+      "category": "Frontend",
+      "description": "Components, signals, change detection, DI, routing, forms, RxJS, performance, SSR, security and enterprise architecture.",
+      "draft": false
+    },
+    {
+      "slug": "react",
+      "title": "React",
+      "icon": "react",
+      "category": "Frontend",
+      "description": "Rendering, hooks, effects, state, performance, Suspense, React 19 Actions, Server Components, testing and architecture.",
+      "draft": false
+    },
+    {
+      "slug": "nodejs",
+      "title": "Node.js",
+      "icon": "nodejs",
+      "category": "Backend",
+      "description": "Event loop, streams, modules, error handling, scaling, performance, security and production operations.",
+      "draft": false
+    },
+    {
+      "slug": "express",
+      "title": "Express.js",
+      "icon": "express",
+      "category": "Backend",
+      "description": "Routing, middleware, error handling, validation, authentication, security, testing and performance for Express APIs.",
+      "draft": false
+    },
+    {
+      "slug": "sql",
+      "title": "SQL",
+      "icon": "sql",
+      "category": "Databases",
+      "description": "Joins, aggregation, NULLs, window functions, CTEs, indexes, transactions, normalisation and query optimisation.",
+      "draft": false
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB",
+      "icon": "mongodb",
+      "category": "Databases",
+      "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
+      "draft": false
+    },
+    {
+      "slug": "data-analytics",
+      "title": "Data Analytics",
+      "icon": "analytics",
+      "category": "Data",
+      "description": "Analysis process, data cleaning, SQL and pandas, statistics, A/B testing, metrics, dashboards and communication.",
+      "draft": false
+    },
+    {
+      "slug": "data-engineering",
+      "title": "Data Engineering",
+      "icon": "dataengineering",
+      "category": "Data",
+      "description": "Architecture, modelling, ETL/ELT, CDC, Airflow, Spark, Kafka and streaming, lakehouses, data quality, governance and platform design.",
+      "draft": false
+    }
+  ]
+}

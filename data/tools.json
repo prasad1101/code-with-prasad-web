@@ -1,0 +1,518 @@
+{
+  "categories": [
+    { "name": "Editors & IDEs", "icon": "code" },
+    { "name": "AI coding assistants", "icon": "ai" },
+    { "name": "API development & testing", "icon": "api" },
+    { "name": "Databases", "icon": "database" },
+    { "name": "Version control", "icon": "git" },
+    { "name": "Containers & DevOps", "icon": "docker" },
+    { "name": "Terminal & shell", "icon": "terminal" },
+    { "name": "Runtimes & package managers", "icon": "package" },
+    { "name": "Browser & debugging", "icon": "browser" },
+    { "name": "Data & analytics", "icon": "chart" },
+    { "name": "Design & diagrams", "icon": "design" },
+    { "name": "Hosting & deployment", "icon": "cloud" },
+    { "name": "Docs & learning", "icon": "book" },
+    { "name": "Productivity", "icon": "zap" }
+  ],
+  "tools": [
+    {
+      "name": "Visual Studio Code",
+      "url": "https://code.visualstudio.com/",
+      "category": "Editors & IDEs",
+      "pricing": "Free",
+      "description": "The most popular code editor: fast, extensible and great for JavaScript, TypeScript, Python and almost anything else.",
+      "tags": ["editor", "extensions", "debugger"],
+      "featured": true
+    },
+    {
+      "name": "JetBrains IDEs",
+      "url": "https://www.jetbrains.com/ides/",
+      "category": "Editors & IDEs",
+      "pricing": "Freemium",
+      "description": "WebStorm, PyCharm, IntelliJ IDEA, DataGrip and more: deep refactoring, code analysis and debugging per language.",
+      "tags": ["ide", "refactoring", "webstorm", "pycharm"]
+    },
+    {
+      "name": "Cursor",
+      "url": "https://cursor.com/",
+      "category": "Editors & IDEs",
+      "pricing": "Freemium",
+      "description": "An AI-first editor built on VS Code, with codebase-aware chat, multi-file edits and agent mode.",
+      "tags": ["ai", "editor", "vs code"]
+    },
+    {
+      "name": "Neovim",
+      "url": "https://neovim.io/",
+      "category": "Editors & IDEs",
+      "pricing": "Free & open source",
+      "description": "A modern, extensible Vim for keyboard-driven editing in the terminal, with Lua config and built-in LSP.",
+      "tags": ["vim", "terminal", "editor"]
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "category": "AI coding assistants",
+      "pricing": "Freemium",
+      "description": "Anthropic's AI assistant for explaining code, debugging, reviewing and writing. Claude Code runs as an agent in your terminal and IDE.",
+      "tags": ["ai", "chat", "agent", "code review"],
+      "featured": true
+    },
+    {
+      "name": "GitHub Copilot",
+      "url": "https://github.com/features/copilot",
+      "category": "AI coding assistants",
+      "pricing": "Freemium",
+      "description": "AI code completions and chat inside VS Code, JetBrains IDEs and GitHub itself.",
+      "tags": ["ai", "autocomplete", "github"]
+    },
+    {
+      "name": "Postman",
+      "url": "https://www.postman.com/",
+      "category": "API development & testing",
+      "pricing": "Freemium",
+      "description": "Build, test and document REST, GraphQL and WebSocket APIs, with collections, environments and automated tests.",
+      "tags": ["rest", "graphql", "api testing"],
+      "featured": true
+    },
+    {
+      "name": "Bruno",
+      "url": "https://www.usebruno.com/",
+      "category": "API development & testing",
+      "pricing": "Free & open source",
+      "description": "An offline, Git-friendly API client: collections are plain files you commit alongside your code.",
+      "tags": ["rest", "offline", "git"]
+    },
+    {
+      "name": "Insomnia",
+      "url": "https://insomnia.rest/",
+      "category": "API development & testing",
+      "pricing": "Freemium",
+      "description": "A clean API client for REST, GraphQL, gRPC and WebSockets, with environment variables and design-first specs.",
+      "tags": ["rest", "graphql", "grpc"]
+    },
+    {
+      "name": "Hoppscotch",
+      "url": "https://hoppscotch.io/",
+      "category": "API development & testing",
+      "pricing": "Free & open source",
+      "description": "A lightweight API client that runs in the browser. Handy when you can't install anything.",
+      "tags": ["rest", "browser", "websocket"]
+    },
+    {
+      "name": "Swagger Editor",
+      "url": "https://editor.swagger.io/",
+      "category": "API development & testing",
+      "pricing": "Free & open source",
+      "description": "Write and preview OpenAPI specifications in the browser, with interactive API docs.",
+      "tags": ["openapi", "docs", "spec"]
+    },
+    {
+      "name": "DBeaver",
+      "url": "https://dbeaver.io/",
+      "category": "Databases",
+      "pricing": "Free & open source",
+      "description": "A universal database client for PostgreSQL, MySQL, SQL Server, Oracle, SQLite and dozens more, with ER diagrams and data export.",
+      "tags": ["sql", "client", "postgres", "mysql"],
+      "featured": true
+    },
+    {
+      "name": "MongoDB Compass",
+      "url": "https://www.mongodb.com/products/tools/compass",
+      "category": "Databases",
+      "pricing": "Free",
+      "description": "The official MongoDB GUI: browse documents, build aggregation pipelines visually and analyse schemas and indexes.",
+      "tags": ["mongodb", "nosql", "aggregation"]
+    },
+    {
+      "name": "pgAdmin",
+      "url": "https://www.pgadmin.org/",
+      "category": "Databases",
+      "pricing": "Free & open source",
+      "description": "The standard administration and query tool for PostgreSQL.",
+      "tags": ["postgres", "admin", "sql"]
+    },
+    {
+      "name": "DuckDB",
+      "url": "https://duckdb.org/",
+      "category": "Databases",
+      "pricing": "Free & open source",
+      "description": "An in-process analytical database: query CSV, Parquet and JSON files with fast SQL right on your laptop.",
+      "tags": ["analytics", "sql", "parquet", "olap"]
+    },
+    {
+      "name": "Redis Insight",
+      "url": "https://redis.io/insight/",
+      "category": "Databases",
+      "pricing": "Free",
+      "description": "A GUI for browsing Redis keys, running commands and profiling memory and performance.",
+      "tags": ["redis", "cache", "gui"]
+    },
+    {
+      "name": "Git",
+      "url": "https://git-scm.com/",
+      "category": "Version control",
+      "pricing": "Free & open source",
+      "description": "The version control system everything else is built on. Learn branching, rebasing and bisect well; it pays off daily.",
+      "tags": ["vcs", "cli"],
+      "featured": true
+    },
+    {
+      "name": "GitHub Desktop",
+      "url": "https://desktop.github.com/",
+      "category": "Version control",
+      "pricing": "Free & open source",
+      "description": "A simple visual Git client for committing, branching and resolving conflicts without the command line.",
+      "tags": ["git", "gui", "github"]
+    },
+    {
+      "name": "GitLens",
+      "url": "https://www.gitkraken.com/gitlens",
+      "category": "Version control",
+      "pricing": "Freemium",
+      "description": "A VS Code extension showing who changed each line and why, with rich history and comparison views.",
+      "tags": ["git", "vs code", "blame"]
+    },
+    {
+      "name": "lazygit",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "category": "Version control",
+      "pricing": "Free & open source",
+      "description": "A fast terminal UI for Git: stage hunks, rebase interactively and manage branches with a few keystrokes.",
+      "tags": ["git", "terminal", "tui"]
+    },
+    {
+      "name": "Docker Desktop",
+      "url": "https://www.docker.com/products/docker-desktop/",
+      "category": "Containers & DevOps",
+      "pricing": "Freemium",
+      "description": "Build and run containers locally, with Docker Compose for multi-service apps. Free for personal use and small businesses.",
+      "tags": ["docker", "containers", "compose"],
+      "featured": true
+    },
+    {
+      "name": "Podman",
+      "url": "https://podman.io/",
+      "category": "Containers & DevOps",
+      "pricing": "Free & open source",
+      "description": "A daemonless, Docker-compatible container engine with a desktop app.",
+      "tags": ["containers", "docker alternative"]
+    },
+    {
+      "name": "k9s",
+      "url": "https://k9scli.io/",
+      "category": "Containers & DevOps",
+      "pricing": "Free & open source",
+      "description": "A terminal UI for Kubernetes: watch pods, tail logs, exec into containers and manage resources quickly.",
+      "tags": ["kubernetes", "terminal", "tui"]
+    },
+    {
+      "name": "Terraform",
+      "url": "https://developer.hashicorp.com/terraform",
+      "category": "Containers & DevOps",
+      "pricing": "Free",
+      "description": "Infrastructure as code: define cloud resources in files, review changes as plans and apply them repeatably. OpenTofu is the open-source fork.",
+      "tags": ["iac", "cloud", "aws", "azure"]
+    },
+    {
+      "name": "Oh My Zsh",
+      "url": "https://ohmyz.sh/",
+      "category": "Terminal & shell",
+      "pricing": "Free & open source",
+      "description": "A framework for Zsh with themes and hundreds of plugins (git aliases, autosuggestions and more).",
+      "tags": ["zsh", "shell", "plugins"]
+    },
+    {
+      "name": "Warp",
+      "url": "https://www.warp.dev/",
+      "category": "Terminal & shell",
+      "pricing": "Freemium",
+      "description": "A modern terminal with editable command blocks, built-in AI command help and shareable workflows.",
+      "tags": ["terminal", "ai"]
+    },
+    {
+      "name": "iTerm2",
+      "url": "https://iterm2.com/",
+      "category": "Terminal & shell",
+      "pricing": "Free & open source",
+      "description": "A powerful terminal replacement for macOS, with split panes, search and profiles.",
+      "tags": ["terminal", "macos"]
+    },
+    {
+      "name": "Windows Terminal",
+      "url": "https://github.com/microsoft/terminal",
+      "category": "Terminal & shell",
+      "pricing": "Free & open source",
+      "description": "Microsoft's modern terminal for PowerShell, Command Prompt and WSL, with tabs and panes.",
+      "tags": ["terminal", "windows", "wsl"]
+    },
+    {
+      "name": "fzf",
+      "url": "https://github.com/junegunn/fzf",
+      "category": "Terminal & shell",
+      "pricing": "Free & open source",
+      "description": "A fuzzy finder for the command line: search history, files and git branches instantly (try Ctrl+R).",
+      "tags": ["search", "cli", "productivity"]
+    },
+    {
+      "name": "nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "category": "Runtimes & package managers",
+      "pricing": "Free & open source",
+      "description": "Install and switch between Node.js versions per project (nvm-windows on Windows).",
+      "tags": ["node", "versions"]
+    },
+    {
+      "name": "pnpm",
+      "url": "https://pnpm.io/",
+      "category": "Runtimes & package managers",
+      "pricing": "Free & open source",
+      "description": "A fast, disk-efficient Node.js package manager with excellent monorepo support.",
+      "tags": ["node", "npm", "monorepo"]
+    },
+    {
+      "name": "uv",
+      "url": "https://docs.astral.sh/uv/",
+      "category": "Runtimes & package managers",
+      "pricing": "Free & open source",
+      "description": "An extremely fast Python package and project manager that replaces pip, venv and pyenv in one tool.",
+      "tags": ["python", "pip", "virtualenv"]
+    },
+    {
+      "name": "Homebrew",
+      "url": "https://brew.sh/",
+      "category": "Runtimes & package managers",
+      "pricing": "Free & open source",
+      "description": "The package manager for macOS (and Linux). One command installs almost any developer tool.",
+      "tags": ["macos", "linux", "install"]
+    },
+    {
+      "name": "Chrome DevTools",
+      "url": "https://developer.chrome.com/docs/devtools",
+      "category": "Browser & debugging",
+      "pricing": "Free",
+      "description": "Inspect the DOM and CSS, debug JavaScript, profile performance and watch network requests, all built into Chrome.",
+      "tags": ["debugging", "performance", "network"],
+      "featured": true
+    },
+    {
+      "name": "React Developer Tools",
+      "url": "https://react.dev/learn/react-developer-tools",
+      "category": "Browser & debugging",
+      "pricing": "Free & open source",
+      "description": "A browser extension to inspect React component trees, props, state and render performance.",
+      "tags": ["react", "extension", "profiler"]
+    },
+    {
+      "name": "Angular DevTools",
+      "url": "https://angular.dev/tools/devtools",
+      "category": "Browser & debugging",
+      "pricing": "Free & open source",
+      "description": "A browser extension for exploring Angular component trees and profiling change detection.",
+      "tags": ["angular", "extension", "profiler"]
+    },
+    {
+      "name": "Lighthouse",
+      "url": "https://developer.chrome.com/docs/lighthouse/overview",
+      "category": "Browser & debugging",
+      "pricing": "Free & open source",
+      "description": "Audit pages for performance, accessibility, SEO and best practices, with concrete fixes.",
+      "tags": ["performance", "accessibility", "seo"]
+    },
+    {
+      "name": "ngrok",
+      "url": "https://ngrok.com/",
+      "category": "Browser & debugging",
+      "pricing": "Freemium",
+      "description": "Expose a local server on a public URL, perfect for testing webhooks and mobile devices.",
+      "tags": ["tunnel", "webhooks", "localhost"]
+    },
+    {
+      "name": "Jupyter",
+      "url": "https://jupyter.org/",
+      "category": "Data & analytics",
+      "pricing": "Free & open source",
+      "description": "Interactive notebooks for Python data exploration, visualisation and sharing analysis.",
+      "tags": ["python", "notebooks", "pandas"],
+      "featured": true
+    },
+    {
+      "name": "Power BI Desktop",
+      "url": "https://www.microsoft.com/power-platform/products/power-bi/desktop",
+      "category": "Data & analytics",
+      "pricing": "Free",
+      "description": "Build interactive dashboards and data models on Windows. Sharing needs a Power BI licence.",
+      "tags": ["bi", "dashboards", "dax"]
+    },
+    {
+      "name": "Tableau Public",
+      "url": "https://public.tableau.com/",
+      "category": "Data & analytics",
+      "pricing": "Free",
+      "description": "Create and publish data visualisations for free. Great for building a public analytics portfolio.",
+      "tags": ["visualisation", "bi", "portfolio"]
+    },
+    {
+      "name": "Apache Superset",
+      "url": "https://superset.apache.org/",
+      "category": "Data & analytics",
+      "pricing": "Free & open source",
+      "description": "An open-source BI platform for SQL exploration and dashboards on top of your data warehouse.",
+      "tags": ["bi", "dashboards", "sql"]
+    },
+    {
+      "name": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "category": "Data & analytics",
+      "pricing": "Freemium",
+      "description": "Hosted Jupyter notebooks in the browser with free access to GPUs. Nothing to install.",
+      "tags": ["python", "notebooks", "ml"]
+    },
+    {
+      "name": "Figma",
+      "url": "https://www.figma.com/",
+      "category": "Design & diagrams",
+      "pricing": "Freemium",
+      "description": "Collaborative UI design and prototyping. Developers use Dev Mode to inspect spacing, colours and CSS.",
+      "tags": ["ui", "design", "prototyping"],
+      "featured": true
+    },
+    {
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "category": "Design & diagrams",
+      "pricing": "Free & open source",
+      "description": "Hand-drawn-style whiteboard diagrams, ideal for system design sketches and interview practice.",
+      "tags": ["whiteboard", "diagrams", "system design"]
+    },
+    {
+      "name": "draw.io (diagrams.net)",
+      "url": "https://www.drawio.com/",
+      "category": "Design & diagrams",
+      "pricing": "Free & open source",
+      "description": "Architecture, flowchart and UML diagrams with AWS, Azure and GCP shape libraries. Saves to your own storage.",
+      "tags": ["architecture", "uml", "flowchart"]
+    },
+    {
+      "name": "dbdiagram.io",
+      "url": "https://dbdiagram.io/",
+      "category": "Design & diagrams",
+      "pricing": "Freemium",
+      "description": "Design database schemas as code and get ER diagrams plus SQL for PostgreSQL, MySQL and SQL Server.",
+      "tags": ["er diagram", "schema", "sql"]
+    },
+    {
+      "name": "Mermaid",
+      "url": "https://mermaid.js.org/",
+      "category": "Design & diagrams",
+      "pricing": "Free & open source",
+      "description": "Write flowcharts, sequence and ER diagrams as text. GitHub renders Mermaid in Markdown automatically.",
+      "tags": ["diagrams as code", "markdown", "docs"]
+    },
+    {
+      "name": "GitHub Pages",
+      "url": "https://pages.github.com/",
+      "category": "Hosting & deployment",
+      "pricing": "Free",
+      "description": "Free static hosting straight from a GitHub repository, with custom domains and HTTPS. This site runs on it.",
+      "tags": ["static", "hosting", "github"]
+    },
+    {
+      "name": "Vercel",
+      "url": "https://vercel.com/",
+      "category": "Hosting & deployment",
+      "pricing": "Freemium",
+      "description": "Git-push deploys for React, Next.js and other front ends, with preview URLs for every pull request.",
+      "tags": ["frontend", "next.js", "serverless"]
+    },
+    {
+      "name": "Netlify",
+      "url": "https://www.netlify.com/",
+      "category": "Hosting & deployment",
+      "pricing": "Freemium",
+      "description": "Hosting for static sites and front ends, with deploy previews, forms and serverless functions.",
+      "tags": ["static", "jamstack", "functions"]
+    },
+    {
+      "name": "Render",
+      "url": "https://render.com/",
+      "category": "Hosting & deployment",
+      "pricing": "Freemium",
+      "description": "Deploy Node.js and Python back ends, databases and cron jobs from Git with minimal DevOps.",
+      "tags": ["backend", "node", "postgres"]
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "category": "Docs & learning",
+      "pricing": "Free",
+      "description": "The definitive reference for HTML, CSS, JavaScript and web APIs, including browser compatibility tables.",
+      "tags": ["javascript", "css", "html", "reference"],
+      "featured": true
+    },
+    {
+      "name": "DevDocs",
+      "url": "https://devdocs.io/",
+      "category": "Docs & learning",
+      "pricing": "Free & open source",
+      "description": "Fast, searchable documentation for hundreds of languages and frameworks in one place, including offline.",
+      "tags": ["docs", "offline", "search"]
+    },
+    {
+      "name": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "category": "Docs & learning",
+      "pricing": "Free",
+      "description": "Community roadmaps showing what to learn, in order, for frontend, backend, DevOps, data and more.",
+      "tags": ["career", "roadmap", "learning path"]
+    },
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/",
+      "category": "Docs & learning",
+      "pricing": "Freemium",
+      "description": "Coding problems for data structures, algorithms and SQL interview practice.",
+      "tags": ["dsa", "interview", "sql"]
+    },
+    {
+      "name": "Can I use",
+      "url": "https://caniuse.com/",
+      "category": "Docs & learning",
+      "pricing": "Free",
+      "description": "Check which browsers support a CSS, HTML or JavaScript feature before you ship it.",
+      "tags": ["browser support", "css", "compatibility"]
+    },
+    {
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "category": "Productivity",
+      "pricing": "Freemium",
+      "description": "Notes, docs, wikis and task boards in one workspace. Popular for team documentation and personal learning notes.",
+      "tags": ["notes", "docs", "wiki"]
+    },
+    {
+      "name": "Obsidian",
+      "url": "https://obsidian.md/",
+      "category": "Productivity",
+      "pricing": "Free",
+      "description": "A local-first Markdown notes app with backlinks and a graph view, great for a personal knowledge base.",
+      "tags": ["notes", "markdown", "knowledge base"]
+    },
+    {
+      "name": "Raycast",
+      "url": "https://www.raycast.com/",
+      "category": "Productivity",
+      "pricing": "Freemium",
+      "description": "A fast macOS launcher with a clipboard history, window management, snippets and developer extensions.",
+      "tags": ["macos", "launcher", "shortcuts"]
+    },
+    {
+      "name": "PowerToys",
+      "url": "https://learn.microsoft.com/windows/powertoys/",
+      "category": "Productivity",
+      "pricing": "Free & open source",
+      "description": "Microsoft's power-user utilities for Windows: a launcher, colour picker, window layouts, text extractor and more.",
+      "tags": ["windows", "launcher", "utilities"]
+    }
+  ]
+}
