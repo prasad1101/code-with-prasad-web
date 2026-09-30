@@ -428,6 +428,114 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "nodejs",
+      "title": "Node.js Tutorial",
+      "language": "Node.js",
+      "icon": "nodejs",
+      "category": "Backend",
+      "description": "Server-side JavaScript from your first script to streams, the event loop, worker threads, scaling, security, production deployment and architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Node.js"
+            },
+            {
+              "slug": "modules-and-npm",
+              "title": "Modules and npm"
+            },
+            {
+              "slug": "file-system",
+              "title": "Working with Files"
+            }
+          ]
+        },
+        {
+          "title": "Core Concepts",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "events",
+              "title": "Events and EventEmitter"
+            },
+            {
+              "slug": "buffers",
+              "title": "Buffers and Binary Data"
+            },
+            {
+              "slug": "streams",
+              "title": "Streams"
+            },
+            {
+              "slug": "http-server",
+              "title": "Building an HTTP Server"
+            },
+            {
+              "slug": "process-and-environment",
+              "title": "Process, Arguments and Environment"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling in Node.js"
+            },
+            {
+              "slug": "building-a-cli",
+              "title": "Building a Command-Line Tool"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Node.js",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "event-loop-internals",
+              "title": "Event Loop Internals"
+            },
+            {
+              "slug": "worker-threads-and-child-processes",
+              "title": "Worker Threads and Child Processes"
+            },
+            {
+              "slug": "scaling-and-clustering",
+              "title": "Scaling and Clustering"
+            },
+            {
+              "slug": "performance-and-profiling",
+              "title": "Performance and Profiling"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing Node.js Applications"
+            }
+          ]
+        },
+        {
+          "title": "Production Node.js",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "security",
+              "title": "Security Best Practices"
+            },
+            {
+              "slug": "production-deployment",
+              "title": "Production Deployment"
+            },
+            {
+              "slug": "architecture",
+              "title": "Architecture and Microservices"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -15,6 +15,14 @@
       "category": "Languages",
       "description": "Type system fundamentals, generics, narrowing, utility, mapped and conditional types, and TypeScript at scale.",
       "draft": false
+    },
+    {
+      "slug": "nodejs",
+      "title": "Node.js",
+      "icon": "nodejs",
+      "category": "Backend",
+      "description": "Event loop, streams, modules, error handling, scaling, performance, security and production operations.",
+      "draft": false
     }
   ]
 }
