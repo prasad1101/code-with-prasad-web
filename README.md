@@ -1,10 +1,12 @@
 # Code with Prasad
 
-Personal portfolio, technical blog, step-by-step programming tutorials (beginner → expert) and interview preparation for **Prasad Pawar** — a static React site hosted on GitHub Pages.
+Personal portfolio, technical blog, step-by-step programming tutorials (beginner → expert), interview preparation and free developer tools for **Prasad Pawar** — a static React site hosted on GitHub Pages.
 
-**Live:** https://prasad1101.github.io/code-with-prasad-web/
+**Live:** https://codewithprasad.in
 
-All content — profile, projects, blog posts and tutorials — lives in this repo as JSON and Markdown under `public/`. Edit a file, push to `main`, and GitHub Actions rebuilds and deploys the site.
+All content — profile, projects, blog posts, tutorials, interview banks and the tool directory — lives in this repo as JSON and Markdown under `public/`. Edit a file, then run `npm run deploy` (see [Deployment](#deployment)).
+
+> **Standards and practices** (SEO, performance, accessibility, security, testing …) are documented in [PRACTICES.md](PRACTICES.md).
 
 ---
 
@@ -15,9 +17,12 @@ All content — profile, projects, blog posts and tutorials — lives in this re
 - [Editing your profile (`site.json`)](#editing-your-profile-sitejson)
 - [Adding a blog post](#adding-a-blog-post)
 - [Adding a tutorial or lesson](#adding-a-tutorial-or-lesson)
+- [Adding interview questions](#adding-interview-questions)
+- [Developer tools](#developer-tools)
 - [Schemas](#schemas)
+- [SEO and analytics](#seo-and-analytics)
 - [Deployment](#deployment)
-- [Switching to a custom domain](#switching-to-a-custom-domain)
+- [Custom domain](#custom-domain)
 - [Project structure](#project-structure)
 
 ---
@@ -49,6 +54,8 @@ npm run dev        # http://localhost:5173/code-with-prasad-web/
 | Blog post bodies | `public/content/posts/<slug>.md` |
 | Tutorial index (tutorials → chapters → lessons) | `public/data/tutorials.json` |
 | Lesson bodies | `public/content/tutorials/<tutorial-slug>/<lesson-slug>.md` |
+| Interview topics / question banks | `public/data/interview.json`, `public/content/interview/<slug>.md` |
+| Toolkit directory (external tools) | `public/data/tools.json` |
 | Images (photo, covers …) | `public/images/` |
 
 The app fetches these files at runtime, validates them (see `src/lib/schemas.ts`) and renders them.
@@ -180,6 +187,30 @@ Interview prep lives in its own section (`/#/interview`), separate from tutorial
 
    Levels: `Beginner`, `Intermediate`, `Advanced`, `Expert`. Question ids (used in deep links) are generated from the question text, so avoid renaming published questions.
 
+## Developer tools
+
+The Tools section (`/#/tools`) has two tabs.
+
+**Online tools** are 18 React components in `src/tools/tools/`, all running entirely in the browser (nothing is uploaded). Each is registered in `src/tools/registry.ts` with its slug, title, category, icon, search keywords and a lazy `import()`, so each tool — and heavy libraries such as `sql-formatter`, `yaml`, `diff`, `papaparse` and `cronstrue` — loads only when opened. Pure logic lives in `src/tools/logic.ts` (no React, easy to unit-test) and shared inputs/outputs in `src/tools/ui.tsx`.
+
+To add a tool: create `src/tools/tools/MyTool.tsx` with a default-exported component, then add an entry to `TOOLS` in the registry. It appears on the Tools page, gets its own URL (`/#/tools/<slug>`) and shows up in search.
+
+**Toolkit directory** is `public/data/tools.json` — a curated list of external apps and services:
+
+```json
+{
+  "name": "DBeaver",
+  "url": "https://dbeaver.io/",
+  "category": "Databases",
+  "pricing": "Free & open source",
+  "description": "A universal database client for …",
+  "tags": ["sql", "client"],
+  "featured": true
+}
+```
+
+`pricing` is one of `Free`, `Free & open source`, `Freemium`, `Paid` (the "Free only" filter keeps the first two). `featured` adds an "Essential" badge. `category` must match a name in `categories`, whose order sets the section order; each category's `icon` is one of `code`, `ai`, `api`, `database`, `git`, `docker`, `terminal`, `package`, `browser`, `chart`, `design`, `cloud`, `book`, `zap`.
+
 ## Tutorial levels, categories and learning paths
 
 - `tutorials[].category` groups courses on the Tutorials page (e.g. `Languages`, `Frontend`, `Backend`, `Databases`, `Data`).
@@ -255,32 +286,53 @@ The authoritative definitions are the zod schemas in `src/lib/schemas.ts`. Summa
 
 `react`, `angular`, `nodejs`, `express`, `mongodb`, `mongoose`, `javascript`, `typescript`, `python`, `html`, `css`, `tailwind`, `bootstrap`, `sass`, `git`, `docker`, `kubernetes`, `aws`, `gcp`, `firebase`, `mysql`, `postgresql`, `redis`, `nextjs`, `nestjs`, `redux`, `rxjs`, `jest`, `linux`, `graphql`, `ionic`, `jquery`, `postman`, `jira`, `jenkins`, `githubactions`, `nginx`, `npm`, `vite`, `webpack`, `socketio`, `django`, `flask`, `fastapi`, `electron`, `flutter`, `vercel`, `netlify`. Anything else falls back to a generic code icon. Add more in `src/lib/techIcons.ts`.
 
+## SEO and analytics
+
+**Static page per route.** After `vite build`, `scripts/seo-pages.ts` (a Vite plugin) writes `dist/<route>/index.html` for every page — home, blog posts, tutorials, every lesson, interview topics, every tool, projects and privacy (276 pages today). Each carries its own `<title>`, meta description, canonical URL, Open Graph / Twitter tags (so LinkedIn and WhatsApp previews are page-specific) and JSON-LD structured data: `WebSite` + `Person`, `BlogPosting`, `Course`, `TechArticle`, `WebApplication` + `FAQPage` for tools, and `BreadcrumbList` everywhere. It also writes `sitemap.xml` (with git-based `lastmod`), `robots.txt` and `404.html`. New content is picked up automatically on the next build.
+
+**One source of truth.** Titles and descriptions come from `src/lib/seo.ts`, used by both the build step and the `<Seo>` component, so the static tags match what the app renders. Canonical URLs end in `/` because GitHub Pages serves `<route>/index.html` there (the slash-less URL 301-redirects).
+
+**Social images** are 1200×630 PNGs in `public/images/og/` (site sections plus one per tool).
+
+**Google Analytics 4.** Set `GA_MEASUREMENT_ID` in `src/config/site.ts` (e.g. `'G-AB12CD34EF'`) and redeploy. Analytics only loads on the production domain, uses Consent Mode v2 (no cookies until the visitor clicks *Allow analytics* in the banner; the choice can be changed on `/privacy`), and sends a `page_view` on every route change. `trackEvent(name, params)` in `src/lib/analytics.ts` sends custom events.
+
+**Google Search Console.** Add a *Domain* property for `codewithprasad.in` and verify it with the TXT record Google gives you (Hostinger → DNS), or put the HTML-tag token in `GOOGLE_SITE_VERIFICATION` in `src/config/site.ts`. Then submit `https://codewithprasad.in/sitemap.xml`.
+
 ## Deployment
 
-Every push to `main` runs `.github/workflows/deploy.yml`: install → lint → build → upload `dist/` → deploy to GitHub Pages.
+GitHub Actions is unavailable on this account, so the site is deployed from a branch:
 
-**One-time setup:** in the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
+```bash
+npm run deploy
+```
 
-**Without GitHub Actions** (e.g. if Actions is disabled on the account): run `npm run deploy`. It builds locally and force-pushes `dist/` to the `gh-pages` branch. Set **Settings → Pages → Source** to **Deploy from a branch → `gh-pages` / `(root)`**. `public/.nojekyll` stops GitHub from running Jekyll on the output.
+This builds locally and force-pushes `dist/` to the `gh-pages` branch (**Settings → Pages → Source → Deploy from a branch → `gh-pages` / `(root)`**). `public/.nojekyll` stops GitHub from running Jekyll on the output. `.github/workflows/deploy.yml` is kept for the day Actions is enabled.
 
-The site uses hash routes (`/#/blog/…`) so every URL works on GitHub Pages without server rewrites. A generated `404.html` also redirects path-style URLs (e.g. `/code-with-prasad-web/blog/foo`) to their hash equivalent.
+The site uses clean URLs (`/tools/jwt-decoder/`). GitHub Pages can't rewrite URLs to a single-page app, so the build writes a real `index.html` for every route (see [SEO](#seo-and-analytics)); unknown URLs get `404.html`, which loads the app's 404 page with a real 404 status. Old hash links (`/#/tools/jwt-decoder`) are rewritten to clean URLs on load.
 
-## Switching to a custom domain
+## Custom domain
 
-1. In `src/config/site.ts` set `BASE_PATH = '/'` and `SITE_ORIGIN = 'https://your-domain.com'`. (The `404.html` redirect and every asset path read from these.)
-2. Add a `public/CNAME` file containing just the domain, e.g. `codewithprasad.dev`.
-3. Configure DNS as described in [GitHub's custom domain docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site) and set the domain under **Settings → Pages**.
-4. Push to `main`.
+The site is served at **codewithprasad.in**:
+
+- `src/config/site.ts` has `BASE_PATH = '/'` and `SITE_ORIGIN = 'https://codewithprasad.in'` (asset paths, canonical URLs and the `404.html` redirect all read from these).
+- `public/CNAME` contains `codewithprasad.in`, which tells GitHub Pages the domain on every deploy.
+- DNS is managed in Hostinger: four `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, four `AAAA` records → `2606:50c0:8000::153` … `2606:50c0:8003::153`, and a `CNAME` for `www` → `prasad1101.github.io`.
+- The old `prasad1101.github.io/code-with-prasad-web/` URL and `www.` redirect to the domain automatically.
 
 ## Project structure
 
 ```
 public/
-  data/                 site.json, blogs.json, tutorials.json
-  content/              posts/*.md, tutorials/<tutorial>/*.md
+  data/                 site.json, blogs.json, tutorials.json, interview.json, tools.json
+  content/              posts/*.md, tutorials/<tutorial>/*.md, interview/*.md
+  CNAME                 custom domain for GitHub Pages
+  images/og/            social preview images
   images/               photo and other images
+scripts/
+  deploy.mjs            build + push dist/ to gh-pages
+  seo-pages.ts          build plugin: per-route HTML, sitemap.xml, robots.txt, 404.html
 src/
-  config/               site.ts (base path), dataSources.ts (content URLs)
+  config/               site.ts (base path, origin, GA id), dataSources.ts (content URLs)
   lib/                  schemas (zod), data fetching, markdown rendering, helpers
   hooks/                content loading, theme, scroll-spy, tutorial progress
   components/
@@ -288,9 +340,13 @@ src/
     home/               hero, stats, about, skills, experience, work, contact …
     blog/               post card, article renderer, table of contents, share buttons
     tutorials/          tutorial card, lesson outline
+    interview/          topic card, question item, practice mode
+    tools/              tool and directory cards
     ui/                 buttons, chips, cards, skeletons, SEO tags
-  pages/                Home, BlogList, BlogPost, Tutorials, TutorialOverview, TutorialLesson, Projects, NotFound
+  tools/                developer tools: registry, shared UI, pure logic, tools/*.tsx (one per tool)
+  pages/                Home, BlogList, BlogPost, Tutorials, TutorialOverview, TutorialLesson,
+                        Interview, InterviewTopic, Tools, ToolPage, Projects, Privacy, NotFound
 docs/                   private source material — git-ignored, never published
 ```
 
-**Stack:** React 18, TypeScript, Vite, Tailwind CSS 4, Framer Motion, React Router (hash routing), react-helmet-async, marked + highlight.js + DOMPurify, zod, self-hosted fonts (Space Grotesk, Inter, JetBrains Mono).
+**Stack:** React 18, TypeScript, Vite, Tailwind CSS 4, Framer Motion, React Router (clean URLs, pre-generated route pages), react-helmet-async, marked + highlight.js + DOMPurify, zod, sql-formatter, yaml, diff, papaparse, cronstrue (tools, lazy-loaded), self-hosted fonts (Space Grotesk, Inter, JetBrains Mono).

@@ -28,7 +28,7 @@ export function QuestionItem({
 }: Props) {
   // Answers are rendered only once opened, so long banks stay fast.
   const html = useMemo(
-    () => (open ? renderArticle(q.answer, `#${routePath}`).html : ''),
+    () => (open ? renderArticle(q.answer, routePath).html : ''),
     [open, q.answer, routePath],
   )
   const panelId = `${q.id}-answer`

@@ -6,6 +6,7 @@ import { Reveal } from '../components/ui/Reveal'
 import { Seo } from '../components/ui/Seo'
 import { CardGridSkeleton } from '../components/ui/Skeleton'
 import { useInterviewTopics } from '../hooks/useContent'
+import { PAGE_META } from '../lib/seo'
 
 export default function Interview() {
   const { status, topics, error } = useInterviewTopics()
@@ -19,11 +20,7 @@ export default function Interview() {
 
   return (
     <>
-      <Seo
-        title="Interview preparation"
-        path="/interview"
-        description="Interview question banks with detailed answers for JavaScript, TypeScript, Python, Angular, React, Node.js, Express, SQL, MongoDB, data analytics and data engineering."
-      />
+      <Seo {...PAGE_META.interview} path="/interview" />
       <PageHeader
         eyebrow="Interview prep"
         title={

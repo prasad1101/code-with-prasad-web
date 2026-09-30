@@ -14,6 +14,7 @@ import { Seo } from '../components/ui/Seo'
 import { ArticleSkeleton, PageSkeleton } from '../components/ui/Skeleton'
 import { useLessonContent, useTutorials } from '../hooks/useContent'
 import { useProgress } from '../hooks/useProgress'
+import { lessonSeo, PAGE_META } from '../lib/seo'
 import { renderArticle } from '../lib/markdown/rich'
 import NotFound from './NotFound'
 
@@ -28,7 +29,7 @@ export default function TutorialLesson() {
   const [drawer, setDrawer] = useState(false)
   const path = `/tutorials/${slug}/${lessonSlug}`
   const article = useMemo(
-    () => (content.data ? renderArticle(content.data, `#${path}`) : undefined),
+    () => (content.data ? renderArticle(content.data, path) : undefined),
     [content.data, path],
   )
 
@@ -56,9 +57,9 @@ export default function TutorialLesson() {
   return (
     <>
       <Seo
-        title={`${current.lesson.title} — ${tutorial.title}`}
-        description={`${tutorial.title}, lesson ${current.index + 1}: ${current.lesson.title}.`}
+        {...lessonSeo(tutorial.title, current.lesson.title, content.data)}
         path={path}
+        image={PAGE_META.tutorials.image}
         type="article"
       />
       <ReadingProgress />

@@ -11,6 +11,7 @@ import { CardGridSkeleton } from '../components/ui/Skeleton'
 import { TechIcon } from '../components/ui/TechIcon'
 import { useTutorials } from '../hooks/useContent'
 import type { LearningPath, Tutorial } from '../lib/schemas'
+import { PAGE_META } from '../lib/seo'
 
 export default function Tutorials() {
   const { status, tutorials, paths, error } = useTutorials()
@@ -34,11 +35,7 @@ export default function Tutorials() {
 
   return (
     <>
-      <Seo
-        title="Tutorials"
-        path="/tutorials"
-        description="Free step-by-step tutorials from beginner to expert: JavaScript, TypeScript, Python, Angular, React, Node.js, Express, SQL, MongoDB, data analytics and data engineering."
-      />
+      <Seo {...PAGE_META.tutorials} path="/tutorials" />
       <PageHeader
         eyebrow="Tutorials"
         title={

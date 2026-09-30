@@ -12,6 +12,7 @@ import { Seo } from '../components/ui/Seo'
 import { CardGridSkeleton } from '../components/ui/Skeleton'
 import { useBlogs } from '../hooks/useContent'
 import type { Post } from '../lib/schemas'
+import { PAGE_META } from '../lib/seo'
 
 const PAGE_SIZE = 6
 
@@ -80,11 +81,7 @@ export default function BlogList() {
 
   return (
     <>
-      <Seo
-        title="Blog"
-        path="/blog"
-        description="Articles on JavaScript, Node.js, React, Angular, MongoDB and system design by Prasad Pawar."
-      />
+      <Seo {...PAGE_META.blog} path="/blog" />
       <PageHeader
         eyebrow="Blog"
         title={

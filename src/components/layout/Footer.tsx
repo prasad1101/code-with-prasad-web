@@ -49,8 +49,10 @@ export function Footer() {
           links={[
             { label: 'All tutorials', to: '/tutorials' },
             { label: 'Interview prep', to: '/interview' },
+            { label: 'Developer tools', to: '/tools' },
             { label: 'Latest posts', to: '/blog' },
             { label: 'Projects', to: '/projects' },
+            { label: 'Privacy', to: '/privacy' },
           ]}
         />
       </div>

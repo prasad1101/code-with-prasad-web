@@ -8,6 +8,7 @@
  *   public/content/tutorials/<tutorial>/<lesson>.md  lesson bodies
  *   public/data/interview.json   interview topics
  *   public/content/interview/<topic>.md              question banks
+ *   public/data/tools.json       curated directory of external developer tools
  *
  * Paths are resolved against Vite's base URL, so they follow BASE_PATH automatically.
  */
@@ -18,6 +19,7 @@ export const SOURCES = {
   blogs: `${base}data/blogs.json`,
   tutorials: `${base}data/tutorials.json`,
   interview: `${base}data/interview.json`,
+  tools: `${base}data/tools.json`,
 } as const
 
 export const postContentUrl = (slug: string) => `${base}content/posts/${slug}.md`

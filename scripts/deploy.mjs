@@ -23,4 +23,4 @@ run(`git commit -q -m "Deploy ${sha}"`, 'dist')
 run(`git push -f ${remote} gh-pages`, 'dist')
 run('rm -rf .git', 'dist')
 
-console.log('\nDeployed. Site: https://prasad1101.github.io/code-with-prasad-web/')
+console.log('\nDeployed. Site: https://codewithprasad.in/')

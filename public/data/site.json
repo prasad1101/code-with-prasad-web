@@ -1,9 +1,9 @@
 {
   "meta": {
     "siteTitle": "Code with Prasad",
-    "tagline": "Portfolio, blog, tutorials and interview prep from a Senior Lead Developer.",
-    "description": "Prasad Pawar — Senior Lead Developer (Angular, React, Node.js, MongoDB) with 8+ years building enterprise web applications. Portfolio, technical blog, tutorials and interview preparation.",
-    "ogImage": "TODO: add a 1200x630 social preview image URL",
+    "tagline": "Tutorials, interview prep, developer tools and a blog from a Senior Lead Developer.",
+    "description": "Free coding tutorials from beginner to expert, interview questions with explained answers and online developer tools by Prasad Pawar, Senior Lead Developer.",
+    "ogImage": "/images/og/default.png",
     "themeDefault": "dark"
   },
   "profile": {
@@ -266,7 +266,7 @@
         "Tailwind CSS",
         "GitHub Actions"
       ],
-      "liveUrl": "https://prasad1101.github.io/code-with-prasad-web/",
+      "liveUrl": "https://codewithprasad.in/",
       "repoUrl": "https://github.com/prasad1101/code-with-prasad-web",
       "featured": true
     }

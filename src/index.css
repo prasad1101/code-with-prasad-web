@@ -180,6 +180,12 @@ h4 {
 .md > * + * {
   margin-top: 1.15em;
 }
+.md h1 {
+  @apply text-fg mt-12 text-3xl font-bold sm:text-4xl;
+}
+.md > h1:first-child {
+  margin-top: 0;
+}
 .md h2 {
   @apply text-fg mt-12 text-2xl font-semibold sm:text-[1.7rem];
 }
@@ -189,6 +195,7 @@ h4 {
 .md h4 {
   @apply text-fg mt-7 text-lg font-semibold;
 }
+.md h1,
 .md h2,
 .md h3,
 .md h4 {

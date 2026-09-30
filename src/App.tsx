@@ -1,7 +1,7 @@
 import { LazyMotion, MotionConfig } from 'framer-motion'
 import { lazy, useEffect } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
 import { useSite } from './hooks/useContent'
 // Home is the landing page, so it ships in the entry chunk instead of a second round trip.
@@ -18,6 +18,9 @@ const TutorialLesson = lazy(() => import('./pages/TutorialLesson'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Interview = lazy(() => import('./pages/Interview'))
 const InterviewTopic = lazy(() => import('./pages/InterviewTopic'))
+const Tools = lazy(() => import('./pages/Tools'))
+const ToolPage = lazy(() => import('./pages/ToolPage'))
+const Privacy = lazy(() => import('./pages/Privacy'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 /** site.json's `meta.themeDefault` applies only when the visitor has no saved or OS preference. */
@@ -40,7 +43,7 @@ export default function App() {
       {/* Animation features load after first paint; `strict` forbids the heavy `motion.*` API. */}
       <LazyMotion features={loadMotionFeatures} strict>
         <MotionConfig reducedMotion="user">
-          <HashRouter>
+          <BrowserRouter>
             <Routes>
               <Route element={<Layout />}>
                 <Route index element={<Home />} />
@@ -51,11 +54,14 @@ export default function App() {
                 <Route path="tutorials/:slug/:lesson" element={<TutorialLesson />} />
                 <Route path="interview" element={<Interview />} />
                 <Route path="interview/:slug" element={<InterviewTopic />} />
+                <Route path="tools" element={<Tools />} />
+                <Route path="tools/:slug" element={<ToolPage />} />
                 <Route path="projects" element={<Projects />} />
+                <Route path="privacy" element={<Privacy />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
-          </HashRouter>
+          </BrowserRouter>
         </MotionConfig>
       </LazyMotion>
     </HelmetProvider>

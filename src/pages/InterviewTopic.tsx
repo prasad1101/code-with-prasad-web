@@ -14,6 +14,7 @@ import { useInterviewBank, useInterviewTopics } from '../hooks/useContent'
 import { useProgress } from '../hooks/useProgress'
 import { parseQuestions } from '../lib/interview'
 import { LEVELS } from '../lib/schemas'
+import { interviewSeoTitle, PAGE_META } from '../lib/seo'
 import NotFound from './NotFound'
 
 export default function InterviewTopic() {
@@ -91,7 +92,8 @@ export default function InterviewTopic() {
   return (
     <>
       <Seo
-        title={`${topic.title} interview questions`}
+        title={interviewSeoTitle(topic.title)}
+        image={PAGE_META.interview.image}
         description={topic.description}
         path={path}
       />

@@ -18,14 +18,13 @@ export const escapeHtml = (s: string) =>
   )
 
 /**
- * Route-aware hrefs for a HashRouter site: "/blog/x" → "#/blog/x",
- * "#section" → "<current route>#section", external links open in a new tab.
+ * Route-aware hrefs: "#section" → "<current route>#section" (so it survives <base>-less
+ * client navigation), external links open in a new tab, everything else is kept as is.
  */
 export function linkAttrs(href: string, anchorBase: string): string {
   if (/^https?:\/\//i.test(href)) {
     return `href="${escapeHtml(href)}" target="_blank"`
   }
   if (href.startsWith('#')) return `href="${escapeHtml(anchorBase + href)}"`
-  if (href.startsWith('/')) return `href="#${escapeHtml(href)}"`
   return `href="${escapeHtml(href)}"`
 }

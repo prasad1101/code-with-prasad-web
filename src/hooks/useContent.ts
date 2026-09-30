@@ -56,6 +56,27 @@ export function useInterviewTopics() {
   return { ...res, topics }
 }
 
+export const loadToolDirectory = () =>
+  fetchJson(SOURCES.tools, () => schemas().then((m) => m.toolDirectorySchema))
+
+/** Curated external tools, grouped in the order categories are listed in tools.json. */
+export function useToolDirectory() {
+  const res = useResource('tools', loadToolDirectory)
+  const groups = useMemo(() => {
+    if (!res.data) return []
+    const { categories, tools } = res.data
+    const names = [...new Set([...categories.map((c) => c.name), ...tools.map((t) => t.category)])]
+    return names
+      .map((name) => ({
+        name,
+        icon: categories.find((c) => c.name === name)?.icon,
+        tools: tools.filter((t) => t.category === name),
+      }))
+      .filter((g) => g.tools.length > 0)
+  }, [res.data])
+  return { ...res, groups, count: res.data?.tools.length ?? 0 }
+}
+
 /** Raw Markdown of a topic's question bank. */
 export const useInterviewBank = (topic: string) =>
   useResource(`interview:${topic}`, () => fetchText(interviewContentUrl(topic)))

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { About } from '../components/home/About'
 import { Contact } from '../components/home/Contact'
@@ -17,6 +17,11 @@ import { Seo } from '../components/ui/Seo'
 import { Skeleton } from '../components/ui/Skeleton'
 import { loadSite, useBlogs, useSite, useTutorials } from '../hooks/useContent'
 import { retry } from '../lib/resource'
+
+// Far below the fold, and it pulls in the tool registry + icons — keep it out of the entry chunk.
+const ToolsTeaser = lazy(() =>
+  import('../components/home/ToolsTeaser').then((m) => ({ default: m.ToolsTeaser })),
+)
 
 export default function Home() {
   const site = useSite()
@@ -72,6 +77,9 @@ export default function Home() {
       <LatestPosts />
       <TutorialsTeaser />
       <InterviewTeaser />
+      <Suspense fallback={null}>
+        <ToolsTeaser />
+      </Suspense>
       <Testimonials items={data.testimonials} />
       <Contact site={data} />
     </>

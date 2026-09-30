@@ -32,7 +32,7 @@ export function PracticeMode({ questions, routePath, onPractised, onExit }: Prop
   const [review, setReview] = useState<Question[]>([])
   const current = deck[index]
   const html = useMemo(
-    () => (current && revealed ? renderArticle(current.answer, `#${routePath}`).html : ''),
+    () => (current && revealed ? renderArticle(current.answer, routePath).html : ''),
     [current, revealed, routePath],
   )
 

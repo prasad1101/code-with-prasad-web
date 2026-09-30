@@ -12,9 +12,9 @@ import { ErrorState } from '../components/ui/ErrorState'
 import { PrevNext } from '../components/ui/PrevNext'
 import { Seo } from '../components/ui/Seo'
 import { ArticleSkeleton, PageSkeleton } from '../components/ui/Skeleton'
-import { SITE_URL } from '../config/site'
 import { useBlogs, usePostContent } from '../hooks/useContent'
 import { renderArticle } from '../lib/markdown/rich'
+import { canonicalUrl, PAGE_META } from '../lib/seo'
 import { formatDate, isFilled } from '../lib/text'
 import NotFound from './NotFound'
 
@@ -26,7 +26,7 @@ export default function BlogPost() {
   const content = usePostContent(slug, post?.content)
   const path = `/blog/${slug}`
   const article = useMemo(
-    () => (content.data ? renderArticle(content.data, `#${path}`) : undefined),
+    () => (content.data ? renderArticle(content.data, path) : undefined),
     [content.data, path],
   )
 
@@ -65,7 +65,7 @@ export default function BlogPost() {
         title={post.title}
         description={post.excerpt}
         path={path}
-        image={post.coverImage}
+        image={post.coverImage || PAGE_META.blog.image}
         type="article"
         publishedAt={post.publishedAt}
       />
@@ -92,7 +92,7 @@ export default function BlogPost() {
                 <p className="text-muted mt-1 text-xs">Updated {formatDate(post.updatedAt)}</p>
               )}
             </div>
-            <ShareButtons url={`${SITE_URL}#${path}`} title={post.title} />
+            <ShareButtons url={canonicalUrl(path)} title={post.title} />
           </div>
         </header>
 
@@ -124,7 +124,7 @@ export default function BlogPost() {
               </div>
             )}
             <div className="mt-8 flex justify-end">
-              <ShareButtons url={`${SITE_URL}#${path}`} title={post.title} />
+              <ShareButtons url={canonicalUrl(path)} title={post.title} />
             </div>
             <div className="mt-12">
               <PrevNext

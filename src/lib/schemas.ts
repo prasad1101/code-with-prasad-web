@@ -187,6 +187,25 @@ export const interviewSchema = z.object({
   topics: list(interviewTopicSchema, true),
 })
 
+/* ---------- tools.json (curated directory of external tools) ---------- */
+
+export const PRICING = ['Free', 'Free & open source', 'Freemium', 'Paid'] as const
+
+export const directoryToolSchema = z.object({
+  name: z.string().min(1),
+  url: z.url(),
+  category: z.string().min(1),
+  pricing: z.enum(PRICING).catch('Free'),
+  description: str,
+  tags: z.array(z.string()).catch([]),
+  featured: bool(false),
+})
+
+export const toolDirectorySchema = z.object({
+  categories: list(z.object({ name: z.string().min(1), icon: optStr })),
+  tools: list(directoryToolSchema, true),
+})
+
 /* ---------- Types ---------- */
 
 export type Site = z.output<typeof siteSchema>
@@ -197,3 +216,5 @@ export type Tutorial = z.output<typeof tutorialSchema>
 export type Lesson = z.output<typeof lessonSchema>
 export type LearningPath = z.output<typeof pathSchema>
 export type InterviewTopic = z.output<typeof interviewTopicSchema>
+export type DirectoryTool = z.output<typeof directoryToolSchema>
+export type ToolDirectory = z.output<typeof toolDirectorySchema>

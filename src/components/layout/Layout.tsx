@@ -1,12 +1,15 @@
 import { Suspense, useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
+import { usePageViews } from '../../hooks/usePageViews'
 import { PageSkeleton } from '../ui/Skeleton'
+import { ConsentBanner } from './ConsentBanner'
 import { Footer } from './Footer'
 import { Navbar } from './Navbar'
 import { ScrollToTop } from './ScrollToTop'
 
 export function Layout() {
   const { pathname } = useLocation()
+  usePageViews()
 
   // New page → start at the top. (In-page hashes and ?section= are handled by the pages.)
   useEffect(() => {
@@ -34,6 +37,7 @@ export function Layout() {
       </main>
       <Footer />
       <ScrollToTop />
+      <ConsentBanner />
     </div>
   )
 }

@@ -50,10 +50,15 @@ const stripTags = (html: string) =>
 
 /**
  * Render an article: syntax highlighting, copy buttons, heading ids + anchor links and
- * a table of contents. `anchorBase` is the current route (e.g. "#/blog/my-post") so
- * heading links work under HashRouter.
+ * a table of contents. `anchorBase` is the current route path (e.g. "/blog/my-post") so
+ * heading links are full, shareable URLs. Pages own the <h1>, so "# Heading" becomes an <h2>
+ * unless `keepH1` is set (the Markdown preview tool shows documents as written).
  */
-export function renderArticle(md: string, anchorBase: string): { html: string; toc: TocItem[] } {
+export function renderArticle(
+  md: string,
+  anchorBase: string,
+  { keepH1 = false } = {},
+): { html: string; toc: TocItem[] } {
   const toc: TocItem[] = []
   const used = new Map<string, number>()
 
@@ -68,7 +73,7 @@ export function renderArticle(md: string, anchorBase: string): { html: string; t
         used.set(id, n + 1)
         if (n) id = `${id}-${n}`
         if (depth === 2 || depth === 3) toc.push({ id, text, level: depth })
-        const level = Math.min(Math.max(depth, 2), 6)
+        const level = Math.min(Math.max(depth, keepH1 ? 1 : 2), 6)
         return `<h${level} id="${id}">${inner}<a class="heading-anchor" href="${escapeHtml(`${anchorBase}#${id}`)}" aria-label="Link to section: ${escapeHtml(text)}">#</a></h${level}>`
       },
       code({ text, lang }) {

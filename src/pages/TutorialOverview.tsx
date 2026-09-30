@@ -12,6 +12,7 @@ import { useTutorials } from '../hooks/useContent'
 import { useProgress } from '../hooks/useProgress'
 import NotFound from './NotFound'
 
+import { PAGE_META, tutorialSeoTitle } from '../lib/seo'
 export default function TutorialOverview() {
   const { slug = '' } = useParams()
   const { status, tutorials, error } = useTutorials()
@@ -35,7 +36,12 @@ export default function TutorialOverview() {
 
   return (
     <>
-      <Seo title={tutorial.title} description={tutorial.description} path={`/tutorials/${slug}`} />
+      <Seo
+        title={tutorialSeoTitle(tutorial.title)}
+        description={tutorial.description}
+        path={`/tutorials/${slug}`}
+        image={PAGE_META.tutorials.image}
+      />
       <PageHeader
         eyebrow={`Tutorials / ${tutorial.language || tutorial.title}`}
         title={

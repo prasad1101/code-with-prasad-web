@@ -6,6 +6,7 @@ import { ProjectCard } from '../components/ui/ProjectCard'
 import { Seo } from '../components/ui/Seo'
 import { CardGridSkeleton } from '../components/ui/Skeleton'
 import { useSite } from '../hooks/useContent'
+import { PAGE_META } from '../lib/seo'
 
 export default function Projects() {
   const { status, data, error } = useSite()
@@ -16,11 +17,7 @@ export default function Projects() {
 
   return (
     <>
-      <Seo
-        title="Projects"
-        path="/projects"
-        description="Projects built by Prasad Pawar across the MEAN and MERN stacks."
-      />
+      <Seo {...PAGE_META.projects} path="/projects" />
       <PageHeader
         eyebrow="Projects"
         title={

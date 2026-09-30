@@ -5,7 +5,7 @@ import { Seo } from '../components/ui/Seo'
 export default function NotFound() {
   return (
     <>
-      <Seo title="Page not found" />
+      <Seo title="Page not found" noindex />
       <section className="relative isolate grid min-h-[80dvh] place-items-center overflow-hidden px-4 pt-24 pb-16 text-center">
         <div aria-hidden="true" className="absolute inset-0 -z-10">
           <div className="grid-bg absolute inset-0" />
