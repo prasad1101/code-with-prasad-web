@@ -7,8 +7,8 @@ Living tracker for the portfolio + blog + tutorials site. Update the checkboxes 
 1. Showcase Prasad (MEAN/MERN, 8+ yrs) professionally to recruiters and clients.
 2. Host blog posts on programming languages and technical topics.
 3. Host step-by-step tutorials, **beginner → expert**, for the whole stack: JavaScript, TypeScript, Python, Angular, React, Node.js, Express, SQL, MongoDB, data analytics and data engineering — "Tutorials Point" style (course → chapters → lessons, sidebar, prev/next, progress tracking, learning paths).
-5. Separate **Interview Prep** section: question banks with detailed answers for every topic, level filters, practised tracking and a flashcard practice mode — a one-stop shop to learn and prepare for interviews.
 4. Static hosting on GitHub Pages; all content versioned in this repo as JSON + Markdown.
+5. Separate **Interview Prep** section: question banks with detailed answers for every topic, level filters, practised tracking and a flashcard practice mode — a one-stop shop to learn and prepare for interviews.
 
 ## Decisions
 

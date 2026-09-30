@@ -536,6 +536,102 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "express",
+      "title": "Express.js Tutorial",
+      "language": "Express",
+      "icon": "express",
+      "category": "Backend",
+      "description": "Build production-ready REST APIs with Express 5: routing, middleware, validation, error handling, MongoDB, JWT auth, uploads, security, testing and real-time features.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Express"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing"
+            },
+            {
+              "slug": "request-and-response",
+              "title": "Request and Response"
+            },
+            {
+              "slug": "middleware",
+              "title": "Middleware"
+            }
+          ]
+        },
+        {
+          "title": "Building APIs",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "building-a-rest-api",
+              "title": "Building a REST API"
+            },
+            {
+              "slug": "validation",
+              "title": "Request Validation"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "mongodb-with-mongoose",
+              "title": "MongoDB with Mongoose"
+            },
+            {
+              "slug": "authentication-with-jwt",
+              "title": "Authentication with JWT"
+            },
+            {
+              "slug": "file-uploads",
+              "title": "File Uploads"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Express",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "security-hardening",
+              "title": "Security Hardening"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing APIs"
+            },
+            {
+              "slug": "project-structure",
+              "title": "Project Structure"
+            }
+          ]
+        },
+        {
+          "title": "Production and Real Time",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "performance-and-production",
+              "title": "Performance and Production"
+            },
+            {
+              "slug": "real-time-with-socket-io",
+              "title": "Real-Time with Socket.IO"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

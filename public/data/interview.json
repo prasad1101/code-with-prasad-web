@@ -23,6 +23,14 @@
       "category": "Backend",
       "description": "Event loop, streams, modules, error handling, scaling, performance, security and production operations.",
       "draft": false
+    },
+    {
+      "slug": "express",
+      "title": "Express.js",
+      "icon": "express",
+      "category": "Backend",
+      "description": "Routing, middleware, error handling, validation, authentication, security, testing and performance for Express APIs.",
+      "draft": false
     }
   ]
 }
