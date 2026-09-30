@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
+# Private source material (LinkedIn export etc.) — never published
+docs/

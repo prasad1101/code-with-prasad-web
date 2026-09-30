@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code with Prasad — Full Stack Developer (MEAN / MERN)</title>
+    <meta
+      name="description"
+      content="Portfolio, blog and step-by-step programming tutorials by Prasad Pawar, a full stack developer with 8+ years of experience in the MEAN and MERN stacks."
+    />
+    <meta name="theme-color" content="#07070d" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href="%BASE_URL%data/site.json" as="fetch" crossorigin="anonymous" />
+    <script>
+      // Apply the theme before first paint: saved choice → OS preference → dark.
+      ;(function () {
+        var t
+        try {
+          t = localStorage.getItem('theme')
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        }
+        document.documentElement.classList.toggle('dark', t === 'dark')
+        document.documentElement.style.colorScheme = t
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This site needs JavaScript enabled to load its content.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
