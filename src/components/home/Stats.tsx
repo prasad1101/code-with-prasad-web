@@ -9,6 +9,8 @@ const COLS: Record<number, string> = {
   2: 'sm:grid-cols-2',
   3: 'sm:grid-cols-3',
   4: 'lg:grid-cols-4',
+  5: 'sm:grid-cols-3 lg:grid-cols-5',
+  6: 'sm:grid-cols-3 lg:grid-cols-6',
 }
 
 export function Stats({ stats }: { stats: Stat[] }) {
@@ -18,7 +20,7 @@ export function Stats({ stats }: { stats: Stat[] }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
           <dl
-            className={`card divide-line grid grid-cols-2 overflow-hidden sm:divide-x ${COLS[Math.min(stats.length, 4)]}`}
+            className={`card divide-line grid grid-cols-2 overflow-hidden sm:divide-x ${COLS[Math.min(stats.length, 6)]}`}
           >
             {stats.map((s) => (
               <div key={s.label} className="flex flex-col-reverse gap-1 p-6 text-center">
