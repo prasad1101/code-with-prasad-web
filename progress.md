@@ -6,7 +6,8 @@ Living tracker for the portfolio + blog + tutorials site. Update the checkboxes 
 
 1. Showcase Prasad (MEAN/MERN, 8+ yrs) professionally to recruiters and clients.
 2. Host blog posts on programming languages and technical topics.
-3. Host step-by-step tutorials (JavaScript, Python, …) in a "Tutorials Point" style: course index → chapters → lessons with sidebar navigation, prev/next and progress tracking.
+3. Host step-by-step tutorials, **beginner → expert**, for the whole stack: JavaScript, TypeScript, Python, Angular, React, Node.js, Express, SQL, MongoDB, data analytics and data engineering — "Tutorials Point" style (course → chapters → lessons, sidebar, prev/next, progress tracking, learning paths).
+5. Separate **Interview Prep** section: question banks with detailed answers for every topic, level filters, practised tracking and a flashcard practice mode — a one-stop shop to learn and prepare for interviews.
 4. Static hosting on GitHub Pages; all content versioned in this repo as JSON + Markdown.
 
 ## Decisions
@@ -38,13 +39,29 @@ Living tracker for the portfolio + blog + tutorials site. Update the checkboxes 
 - [x] README
 - [x] Verified in headless Chrome at 360 / 768 / 1280, both themes: no console errors, no horizontal overflow, interaction tests pass
 - [x] Lighthouse (production build): Accessibility / Best practices / SEO 100; Performance 99 desktop, ~82–86 mobile (simulated slow 4G)
-- [ ] Enable GitHub Pages (Settings → Pages → Source: GitHub Actions) and push
-- [ ] Fill profile from LinkedIn PDF — **blocked: `docs/linkedin-profile.pdf` not present**
+- [x] Deployed via `npm run deploy` → `gh-pages` branch (Actions unavailable on the account)
+- [x] Profile, experience, skills and education filled from LinkedIn PDF export
 - [ ] Mobile performance 90+: would need build-time pre-rendering of pages (optional follow-up)
+
+## Content roadmap (tutorial lessons · interview questions)
+
+| Topic | Tutorial | Interview bank |
+| --- | --- | --- |
+| JavaScript | ✅ 31 lessons (Beginner → Expert) | ✅ 35 |
+| TypeScript | ✅ 19 lessons | ✅ 30 |
+| Node.js | ✅ 18 lessons | ✅ 30 |
+| Express | ⏳ | ⏳ |
+| Angular | ⏳ | ⏳ |
+| React | ⏳ | ⏳ |
+| MongoDB | ⏳ | ⏳ |
+| SQL | ⏳ | ⏳ |
+| Python | 12 lessons (Beginner → Intermediate) → extend to Expert ⏳ | ⏳ |
+| Data Analytics | ⏳ | ⏳ |
+| Data Engineering | ⏳ | ⏳ |
 
 ## Open TODOs for Prasad
 
-- Place LinkedIn PDF at `docs/linkedin-profile.pdf` → then fill `experience`, `education`, `certifications`, `skills`, `location`, summary
-- `site.json` placeholders: `profile.location`, `profile.resumeUrl`, `meta.ogImage`, `contact.email`, `contact.formEndpoint`
+- `site.json` placeholders: `profile.resumeUrl`, `meta.ogImage`, `contact.formEndpoint`
+- Consider pointing `codewithprasad.in` (listed on LinkedIn, currently not resolving) at this site as a custom domain
 - `testimonials` (empty → section hidden)
 - More projects in `projects`
