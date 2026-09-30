@@ -1,43 +1,235 @@
 {
+  "paths": [
+    {
+      "slug": "mean",
+      "title": "MEAN stack developer",
+      "description": "MongoDB, Express, Angular and Node.js — the full stack for enterprise web apps.",
+      "tutorials": [
+        "javascript",
+        "typescript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "angular"
+      ]
+    },
+    {
+      "slug": "mern",
+      "title": "MERN stack developer",
+      "description": "Build full-stack apps with MongoDB, Express, React and Node.js.",
+      "tutorials": [
+        "javascript",
+        "typescript",
+        "nodejs",
+        "express",
+        "mongodb",
+        "react"
+      ]
+    },
+    {
+      "slug": "data-analyst",
+      "title": "Data analyst",
+      "description": "Query, clean, analyse and visualise data to answer business questions.",
+      "tutorials": [
+        "python",
+        "sql",
+        "data-analytics"
+      ]
+    },
+    {
+      "slug": "data-engineer",
+      "title": "Data engineer",
+      "description": "Design and run reliable pipelines, warehouses and streaming systems.",
+      "tutorials": [
+        "python",
+        "sql",
+        "mongodb",
+        "data-engineering"
+      ]
+    }
+  ],
   "tutorials": [
     {
       "slug": "javascript",
       "title": "JavaScript Tutorial",
       "language": "JavaScript",
       "icon": "javascript",
-      "level": "Beginner → Intermediate",
-      "description": "Learn the language of the web from scratch: variables, types, control flow, functions, arrays, objects and asynchronous code with promises and async/await.",
+      "category": "Languages",
+      "description": "The language of the web, from your first variable to closures, the event loop, prototypes, performance, design patterns, testing and security.",
       "updatedAt": "2026-09-30",
       "draft": false,
       "chapters": [
         {
           "title": "Getting Started",
+          "level": "Beginner",
           "lessons": [
-            { "slug": "introduction", "title": "Introduction to JavaScript" },
-            { "slug": "setup", "title": "Setup and Your First Program" }
+            {
+              "slug": "introduction",
+              "title": "Introduction to JavaScript"
+            },
+            {
+              "slug": "setup",
+              "title": "Setup and Your First Program"
+            }
           ]
         },
         {
           "title": "Fundamentals",
+          "level": "Beginner",
           "lessons": [
-            { "slug": "variables", "title": "Variables: let, const and var" },
-            { "slug": "data-types", "title": "Data Types" },
-            { "slug": "operators", "title": "Operators" },
-            { "slug": "conditionals", "title": "Conditionals: if, else and switch" },
-            { "slug": "loops", "title": "Loops" }
+            {
+              "slug": "variables",
+              "title": "Variables: let, const and var"
+            },
+            {
+              "slug": "data-types",
+              "title": "Data Types"
+            },
+            {
+              "slug": "operators",
+              "title": "Operators"
+            },
+            {
+              "slug": "conditionals",
+              "title": "Conditionals: if, else and switch"
+            },
+            {
+              "slug": "loops",
+              "title": "Loops"
+            }
           ]
         },
         {
           "title": "Functions and Data",
+          "level": "Beginner",
           "lessons": [
-            { "slug": "functions", "title": "Functions" },
-            { "slug": "arrays", "title": "Arrays" },
-            { "slug": "objects", "title": "Objects" }
+            {
+              "slug": "functions",
+              "title": "Functions"
+            },
+            {
+              "slug": "arrays",
+              "title": "Arrays"
+            },
+            {
+              "slug": "objects",
+              "title": "Objects"
+            }
           ]
         },
         {
-          "title": "Asynchronous JavaScript",
-          "lessons": [{ "slug": "async", "title": "Callbacks, Promises and async/await" }]
+          "title": "Working with the Browser",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "dom",
+              "title": "The DOM"
+            },
+            {
+              "slug": "events",
+              "title": "Events"
+            },
+            {
+              "slug": "browser-storage",
+              "title": "Browser Storage"
+            }
+          ]
+        },
+        {
+          "title": "Modern JavaScript",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "modules",
+              "title": "ES Modules"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes"
+            },
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "iterators-and-generators",
+              "title": "Iterators and Generators"
+            },
+            {
+              "slug": "maps-and-sets",
+              "title": "Map, Set and Weak Collections"
+            },
+            {
+              "slug": "async",
+              "title": "Callbacks, Promises and async/await"
+            }
+          ]
+        },
+        {
+          "title": "Under the Hood",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "execution-context-and-hoisting",
+              "title": "Execution Context and Hoisting"
+            },
+            {
+              "slug": "scope-and-closures",
+              "title": "Scope and Closures"
+            },
+            {
+              "slug": "this-keyword",
+              "title": "The this Keyword"
+            },
+            {
+              "slug": "prototypes-and-inheritance",
+              "title": "Prototypes and Inheritance"
+            },
+            {
+              "slug": "event-loop",
+              "title": "The Event Loop"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Patterns",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "promise-patterns",
+              "title": "Advanced Promise Patterns"
+            },
+            {
+              "slug": "functional-programming",
+              "title": "Functional Programming"
+            }
+          ]
+        },
+        {
+          "title": "Expert Topics",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "memory-and-performance",
+              "title": "Memory and Performance"
+            },
+            {
+              "slug": "proxy-and-reflect",
+              "title": "Metaprogramming: Proxy and Reflect"
+            },
+            {
+              "slug": "design-patterns",
+              "title": "Design Patterns"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing JavaScript"
+            },
+            {
+              "slug": "web-security",
+              "title": "Web Security for JavaScript Developers"
+            }
+          ]
         }
       ]
     },
@@ -46,7 +238,6 @@
       "title": "Python Tutorial",
       "language": "Python",
       "icon": "python",
-      "level": "Beginner → Intermediate",
       "description": "Start programming with Python: variables, strings, control flow, lists, dictionaries, functions, modules, error handling and classes — with examples you can run.",
       "updatedAt": "2026-09-30",
       "draft": false,
@@ -54,38 +245,74 @@
         {
           "title": "Getting Started",
           "lessons": [
-            { "slug": "introduction", "title": "Introduction to Python" },
-            { "slug": "setup", "title": "Installing Python and Your First Program" }
+            {
+              "slug": "introduction",
+              "title": "Introduction to Python"
+            },
+            {
+              "slug": "setup",
+              "title": "Installing Python and Your First Program"
+            }
           ]
         },
         {
           "title": "Fundamentals",
           "lessons": [
-            { "slug": "variables-and-types", "title": "Variables and Data Types" },
-            { "slug": "strings", "title": "Working with Strings" },
-            { "slug": "conditionals", "title": "Conditionals" },
-            { "slug": "loops", "title": "Loops" }
+            {
+              "slug": "variables-and-types",
+              "title": "Variables and Data Types"
+            },
+            {
+              "slug": "strings",
+              "title": "Working with Strings"
+            },
+            {
+              "slug": "conditionals",
+              "title": "Conditionals"
+            },
+            {
+              "slug": "loops",
+              "title": "Loops"
+            }
           ]
         },
         {
           "title": "Data Structures",
           "lessons": [
-            { "slug": "lists-and-tuples", "title": "Lists and Tuples" },
-            { "slug": "dictionaries-and-sets", "title": "Dictionaries and Sets" }
+            {
+              "slug": "lists-and-tuples",
+              "title": "Lists and Tuples"
+            },
+            {
+              "slug": "dictionaries-and-sets",
+              "title": "Dictionaries and Sets"
+            }
           ]
         },
         {
           "title": "Functions and Modules",
           "lessons": [
-            { "slug": "functions", "title": "Functions" },
-            { "slug": "modules", "title": "Modules and Packages" }
+            {
+              "slug": "functions",
+              "title": "Functions"
+            },
+            {
+              "slug": "modules",
+              "title": "Modules and Packages"
+            }
           ]
         },
         {
           "title": "Going Further",
           "lessons": [
-            { "slug": "error-handling", "title": "Error Handling" },
-            { "slug": "classes", "title": "Classes and Objects" }
+            {
+              "slug": "error-handling",
+              "title": "Error Handling"
+            },
+            {
+              "slug": "classes",
+              "title": "Classes and Objects"
+            }
           ]
         }
       ]

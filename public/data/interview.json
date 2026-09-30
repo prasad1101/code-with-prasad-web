@@ -1,0 +1,12 @@
+{
+  "topics": [
+    {
+      "slug": "javascript",
+      "title": "JavaScript",
+      "icon": "javascript",
+      "category": "Languages",
+      "description": "Types, scope, closures, this, prototypes, the event loop, promises, performance and security.",
+      "draft": false
+    }
+  ]
+}
