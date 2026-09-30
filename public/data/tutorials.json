@@ -1282,6 +1282,114 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "data-engineering",
+      "title": "Data Engineering Tutorial",
+      "language": "Data Engineering",
+      "icon": "dataengineering",
+      "category": "Data",
+      "description": "Design and build reliable data platforms: architectures, file formats, modelling, batch ETL/ELT, orchestration, data quality, dbt, warehouses, Spark, streaming, CDC, lakehouses and governance.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Foundations",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Data Engineering"
+            },
+            {
+              "slug": "data-architecture",
+              "title": "Data Architecture: Warehouses, Lakes and Lakehouses"
+            },
+            {
+              "slug": "file-formats",
+              "title": "File Formats and Partitioning"
+            },
+            {
+              "slug": "python-for-data-engineering",
+              "title": "Python for Data Engineering"
+            }
+          ]
+        },
+        {
+          "title": "Batch Data Pipelines",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "data-modeling",
+              "title": "Data Modelling for Analytics"
+            },
+            {
+              "slug": "etl-and-elt",
+              "title": "ETL, ELT and Incremental Loads"
+            },
+            {
+              "slug": "orchestration-with-airflow",
+              "title": "Orchestration with Airflow"
+            },
+            {
+              "slug": "data-quality",
+              "title": "Data Quality and Testing"
+            },
+            {
+              "slug": "dbt",
+              "title": "Transformations with dbt"
+            },
+            {
+              "slug": "cloud-data-warehouses",
+              "title": "Cloud Data Warehouses"
+            }
+          ]
+        },
+        {
+          "title": "Big Data and Streaming",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "spark-fundamentals",
+              "title": "Apache Spark Fundamentals"
+            },
+            {
+              "slug": "spark-optimization",
+              "title": "Optimising Spark Jobs"
+            },
+            {
+              "slug": "streaming-with-kafka",
+              "title": "Streaming with Kafka"
+            },
+            {
+              "slug": "stream-processing",
+              "title": "Stream Processing"
+            },
+            {
+              "slug": "change-data-capture",
+              "title": "Change Data Capture"
+            }
+          ]
+        },
+        {
+          "title": "Data Platforms",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "lakehouse-table-formats",
+              "title": "Lakehouse Table Formats: Delta and Iceberg"
+            },
+            {
+              "slug": "governance-and-security",
+              "title": "Data Governance and Security"
+            },
+            {
+              "slug": "designing-data-platforms",
+              "title": "Designing a Data Platform"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

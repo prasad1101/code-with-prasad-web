@@ -79,6 +79,14 @@
       "category": "Data",
       "description": "Analysis process, data cleaning, SQL and pandas, statistics, A/B testing, metrics, dashboards and communication.",
       "draft": false
+    },
+    {
+      "slug": "data-engineering",
+      "title": "Data Engineering",
+      "icon": "dataengineering",
+      "category": "Data",
+      "description": "Architecture, modelling, ETL/ELT, CDC, Airflow, Spark, Kafka and streaming, lakehouses, data quality, governance and platform design.",
+      "draft": false
     }
   ]
 }
