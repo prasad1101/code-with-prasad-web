@@ -48,6 +48,7 @@ export function Footer() {
           title="Learn"
           links={[
             { label: 'All tutorials', to: '/tutorials' },
+            { label: 'Interview prep', to: '/interview' },
             { label: 'Latest posts', to: '/blog' },
             { label: 'Projects', to: '/projects' },
           ]}

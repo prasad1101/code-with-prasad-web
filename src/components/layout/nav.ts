@@ -3,11 +3,11 @@ export type NavItem = { label: string } & ({ section: string } | { route: string
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'About', section: 'about' },
-  { label: 'Skills', section: 'skills' },
   { label: 'Experience', section: 'experience' },
   { label: 'Work', section: 'work' },
   { label: 'Blog', route: '/blog' },
   { label: 'Tutorials', route: '/tutorials' },
+  { label: 'Interview', route: '/interview' },
   { label: 'Contact', section: 'contact' },
 ]
 

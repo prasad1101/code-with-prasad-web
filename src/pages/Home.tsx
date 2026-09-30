@@ -4,6 +4,7 @@ import { About } from '../components/home/About'
 import { Contact } from '../components/home/Contact'
 import { Experience } from '../components/home/Experience'
 import { Hero } from '../components/home/Hero'
+import { InterviewTeaser } from '../components/home/InterviewTeaser'
 import { LatestPosts } from '../components/home/LatestPosts'
 import { Skills } from '../components/home/Skills'
 import { Stats } from '../components/home/Stats'
@@ -70,6 +71,7 @@ export default function Home() {
       <Work projects={data.projects} />
       <LatestPosts />
       <TutorialsTeaser />
+      <InterviewTeaser />
       <Testimonials items={data.testimonials} />
       <Contact site={data} />
     </>

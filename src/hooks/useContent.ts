@@ -1,5 +1,10 @@
 import { useMemo } from 'react'
-import { lessonContentUrl, postContentUrl, SOURCES } from '../config/dataSources'
+import {
+  interviewContentUrl,
+  lessonContentUrl,
+  postContentUrl,
+  SOURCES,
+} from '../config/dataSources'
 import { fetchJson, fetchText } from '../lib/fetchData'
 import { useResource, type Resource } from '../lib/resource'
 const schemas = () => import('../lib/schemas')
@@ -24,12 +29,36 @@ export function useBlogs() {
   return { ...res, posts, categories: res.data?.categories ?? [] }
 }
 
-/** Published tutorials only. */
+/** Published tutorials only, plus learning paths that reference them. */
 export function useTutorials() {
   const res = useResource('tutorials', loadTutorials)
   const tutorials = useMemo(() => res.data?.tutorials.filter((t) => !t.draft) ?? [], [res.data])
-  return { ...res, tutorials }
+  const paths = useMemo(
+    () =>
+      (res.data?.paths ?? [])
+        .map((p) => ({
+          ...p,
+          tutorials: p.tutorials.filter((s) => tutorials.some((t) => t.slug === s)),
+        }))
+        .filter((p) => p.tutorials.length > 0),
+    [res.data, tutorials],
+  )
+  return { ...res, tutorials, paths }
 }
+
+const loadInterview = () =>
+  fetchJson(SOURCES.interview, () => schemas().then((m) => m.interviewSchema))
+
+/** Published interview topics. */
+export function useInterviewTopics() {
+  const res = useResource('interview', loadInterview)
+  const topics = useMemo(() => res.data?.topics.filter((t) => !t.draft) ?? [], [res.data])
+  return { ...res, topics }
+}
+
+/** Raw Markdown of a topic's question bank. */
+export const useInterviewBank = (topic: string) =>
+  useResource(`interview:${topic}`, () => fetchText(interviewContentUrl(topic)))
 
 /**
  * Markdown body of a post — inline `content` if the index has it, otherwise the .md file.

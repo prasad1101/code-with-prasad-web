@@ -1,6 +1,7 @@
 import { FiCheckCircle, FiCircle } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import type { Tutorial } from '../../lib/schemas'
+import { LevelBadge } from '../ui/LevelBadge'
 
 type Props = {
   tutorial: Tutorial
@@ -16,8 +17,11 @@ export function LessonOutline({ tutorial, current, completed, onNavigate }: Prop
     <ol className="space-y-6">
       {tutorial.chapters.map((chapter, ci) => (
         <li key={chapter.title}>
-          <p className="text-muted mb-2 px-3 font-mono text-[0.7rem] tracking-[0.18em] uppercase">
-            {String(ci + 1).padStart(2, '0')} · {chapter.title}
+          <p className="text-muted mb-2 flex flex-wrap items-center gap-2 px-3 font-mono text-[0.7rem] tracking-[0.18em] uppercase">
+            <span>
+              {String(ci + 1).padStart(2, '0')} · {chapter.title}
+            </span>
+            <LevelBadge level={chapter.level} className="tracking-wider" />
           </p>
           <ol className="space-y-0.5">
             {chapter.lessons.map((lesson) => {

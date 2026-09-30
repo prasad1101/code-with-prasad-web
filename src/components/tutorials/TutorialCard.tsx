@@ -2,7 +2,7 @@ import { FiArrowRight, FiBookOpen, FiLayers } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import type { Tutorial } from '../../lib/schemas'
 import { TechIcon } from '../ui/TechIcon'
-import { lessonCount } from './outline'
+import { lessonCount, levelRange } from './outline'
 
 export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
   return (
@@ -14,9 +14,9 @@ export function TutorialCard({ tutorial }: { tutorial: Tutorial }) {
       <div className="border-line bg-surface-2 mb-5 grid size-14 place-items-center rounded-2xl border">
         <TechIcon icon={tutorial.icon} name={tutorial.language} className="text-accent-2 size-7" />
       </div>
-      {tutorial.level && (
+      {levelRange(tutorial) && (
         <p className="text-muted mb-2 font-mono text-xs tracking-wider uppercase">
-          {tutorial.level}
+          {levelRange(tutorial)}
         </p>
       )}
       <h3 className="text-xl font-semibold">

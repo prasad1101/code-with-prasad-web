@@ -1,7 +1,7 @@
 import { FiArrowRight, FiBookOpen, FiLayers, FiRotateCcw } from 'react-icons/fi'
 import { Link, useParams } from 'react-router-dom'
 import { LessonOutline } from '../components/tutorials/LessonSidebar'
-import { flattenLessons } from '../components/tutorials/outline'
+import { flattenLessons, levelRange } from '../components/tutorials/outline'
 import { Button } from '../components/ui/Button'
 import { ErrorState } from '../components/ui/ErrorState'
 import { TechIcon } from '../components/ui/TechIcon'
@@ -9,13 +9,13 @@ import { PageHeader } from '../components/ui/PageHeader'
 import { Seo } from '../components/ui/Seo'
 import { PageSkeleton } from '../components/ui/Skeleton'
 import { useTutorials } from '../hooks/useContent'
-import { useTutorialProgress } from '../hooks/useTutorialProgress'
+import { useProgress } from '../hooks/useProgress'
 import NotFound from './NotFound'
 
 export default function TutorialOverview() {
   const { slug = '' } = useParams()
   const { status, tutorials, error } = useTutorials()
-  const { completed, setDone } = useTutorialProgress(slug)
+  const { completed, reset } = useProgress(`tutorial-progress:${slug}`)
   const tutorial = tutorials.find((t) => t.slug === slug)
 
   if (status === 'error')
@@ -53,7 +53,7 @@ export default function TutorialOverview() {
         intro={tutorial.description}
       >
         <div className="text-muted mt-6 flex flex-wrap gap-5 text-sm">
-          {tutorial.level && <span>{tutorial.level}</span>}
+          {levelRange(tutorial) && <span>{levelRange(tutorial)}</span>}
           <span className="inline-flex items-center gap-1.5">
             <FiLayers aria-hidden="true" /> {tutorial.chapters.length} chapters
           </span>
@@ -71,10 +71,7 @@ export default function TutorialOverview() {
               />
             </Button>
             {doneCount > 0 && (
-              <Button
-                variant="secondary"
-                onClick={() => lessons.forEach((l) => setDone(l.lesson.slug, false))}
-              >
+              <Button variant="secondary" onClick={reset}>
                 <FiRotateCcw aria-hidden="true" /> Reset progress
               </Button>
             )}

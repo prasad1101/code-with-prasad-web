@@ -134,6 +134,10 @@ export const blogsSchema = z.object({
 
 /* ---------- tutorials.json ---------- */
 
+export const LEVELS = ['Beginner', 'Intermediate', 'Advanced', 'Expert'] as const
+export type Level = (typeof LEVELS)[number]
+const levelSchema = z.enum(LEVELS).optional().catch(undefined)
+
 const lessonSchema = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().min(1),
@@ -150,11 +154,37 @@ export const tutorialSchema = z.object({
   description: str,
   updatedAt: optStr,
   draft: bool(false),
-  chapters: list(z.object({ title: z.string(), lessons: list(lessonSchema) })),
+  /** Grouping on the tutorials page, e.g. "Languages", "Frontend", "Databases". */
+  category: str,
+  chapters: list(z.object({ title: z.string(), level: levelSchema, lessons: list(lessonSchema) })),
+})
+
+/** An ordered set of tutorials, e.g. "MERN stack developer". */
+const pathSchema = z.object({
+  slug: z.string(),
+  title: z.string(),
+  description: str,
+  tutorials: list(z.string()),
 })
 
 export const tutorialsSchema = z.object({
+  paths: list(pathSchema),
   tutorials: list(tutorialSchema, true),
+})
+
+/* ---------- interview.json ---------- */
+
+export const interviewTopicSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  icon: optStr,
+  category: str,
+  description: str,
+  draft: bool(false),
+})
+
+export const interviewSchema = z.object({
+  topics: list(interviewTopicSchema, true),
 })
 
 /* ---------- Types ---------- */
@@ -165,3 +195,5 @@ export type Post = z.output<typeof postSchema>
 export type Tutorials = z.output<typeof tutorialsSchema>
 export type Tutorial = z.output<typeof tutorialSchema>
 export type Lesson = z.output<typeof lessonSchema>
+export type LearningPath = z.output<typeof pathSchema>
+export type InterviewTopic = z.output<typeof interviewTopicSchema>

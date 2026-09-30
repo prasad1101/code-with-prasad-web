@@ -16,6 +16,8 @@ const Tutorials = lazy(() => import('./pages/Tutorials'))
 const TutorialOverview = lazy(() => import('./pages/TutorialOverview'))
 const TutorialLesson = lazy(() => import('./pages/TutorialLesson'))
 const Projects = lazy(() => import('./pages/Projects'))
+const Interview = lazy(() => import('./pages/Interview'))
+const InterviewTopic = lazy(() => import('./pages/InterviewTopic'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 /** site.json's `meta.themeDefault` applies only when the visitor has no saved or OS preference. */
@@ -47,6 +49,8 @@ export default function App() {
                 <Route path="tutorials" element={<Tutorials />} />
                 <Route path="tutorials/:slug" element={<TutorialOverview />} />
                 <Route path="tutorials/:slug/:lesson" element={<TutorialLesson />} />
+                <Route path="interview" element={<Interview />} />
+                <Route path="interview/:slug" element={<InterviewTopic />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="*" element={<NotFound />} />
               </Route>

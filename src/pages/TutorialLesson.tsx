@@ -8,11 +8,12 @@ import { ReadingProgress } from '../components/layout/ReadingProgress'
 import { LessonOutline } from '../components/tutorials/LessonSidebar'
 import { flattenLessons } from '../components/tutorials/outline'
 import { ErrorState } from '../components/ui/ErrorState'
+import { LevelBadge } from '../components/ui/LevelBadge'
 import { PrevNext } from '../components/ui/PrevNext'
 import { Seo } from '../components/ui/Seo'
 import { ArticleSkeleton, PageSkeleton } from '../components/ui/Skeleton'
 import { useLessonContent, useTutorials } from '../hooks/useContent'
-import { useTutorialProgress } from '../hooks/useTutorialProgress'
+import { useProgress } from '../hooks/useProgress'
 import { renderArticle } from '../lib/markdown/rich'
 import NotFound from './NotFound'
 
@@ -23,7 +24,7 @@ export default function TutorialLesson() {
   const lessons = useMemo(() => (tutorial ? flattenLessons(tutorial) : []), [tutorial])
   const current = lessons.find((l) => l.lesson.slug === lessonSlug)
   const content = useLessonContent(slug, lessonSlug, current?.lesson.content)
-  const { completed, setDone } = useTutorialProgress(slug)
+  const { completed, setDone } = useProgress(`tutorial-progress:${slug}`)
   const [drawer, setDrawer] = useState(false)
   const path = `/tutorials/${slug}/${lessonSlug}`
   const article = useMemo(
@@ -111,9 +112,12 @@ export default function TutorialLesson() {
             </nav>
 
             <header className="border-line mb-10 border-b pb-8">
-              <p className="text-accent-2 mb-2 font-mono text-xs tracking-wider uppercase">
-                Lesson {current.index + 1} of {lessons.length}
-              </p>
+              <div className="mb-2 flex flex-wrap items-center gap-3">
+                <p className="text-accent-2 font-mono text-xs tracking-wider uppercase">
+                  Lesson {current.index + 1} of {lessons.length}
+                </p>
+                <LevelBadge level={current.level} />
+              </div>
               <h1 className="text-3xl leading-tight font-bold sm:text-4xl">
                 {current.lesson.title}
               </h1>
