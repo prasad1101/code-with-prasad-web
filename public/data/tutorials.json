@@ -430,6 +430,126 @@
       ]
     },
     {
+      "slug": "angular",
+      "title": "Angular Tutorial",
+      "language": "Angular",
+      "icon": "angular",
+      "category": "Frontend",
+      "description": "Modern Angular from components and signals to routing, forms, HTTP, RxJS, change detection, state management, testing, performance, SSR and enterprise architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Angular"
+            },
+            {
+              "slug": "components-and-templates",
+              "title": "Components and Templates"
+            },
+            {
+              "slug": "data-binding",
+              "title": "Data Binding"
+            },
+            {
+              "slug": "control-flow-and-pipes",
+              "title": "Control Flow and Pipes"
+            },
+            {
+              "slug": "inputs-and-outputs",
+              "title": "Component Inputs and Outputs"
+            }
+          ]
+        },
+        {
+          "title": "Core Angular",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "signals",
+              "title": "Signals"
+            },
+            {
+              "slug": "services-and-dependency-injection",
+              "title": "Services and Dependency Injection"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing"
+            },
+            {
+              "slug": "reactive-forms",
+              "title": "Reactive Forms"
+            },
+            {
+              "slug": "http-client",
+              "title": "HTTP and APIs"
+            },
+            {
+              "slug": "rxjs-essentials",
+              "title": "RxJS Essentials"
+            },
+            {
+              "slug": "directives",
+              "title": "Directives"
+            }
+          ]
+        },
+        {
+          "title": "Advanced Angular",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "change-detection",
+              "title": "Change Detection, OnPush and Zoneless"
+            },
+            {
+              "slug": "component-architecture",
+              "title": "Component Architecture"
+            },
+            {
+              "slug": "state-management",
+              "title": "State Management"
+            },
+            {
+              "slug": "lazy-loading-and-defer",
+              "title": "Lazy Loading and @defer"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing Angular Apps"
+            }
+          ]
+        },
+        {
+          "title": "Enterprise Angular",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "performance-optimization",
+              "title": "Performance Optimisation"
+            },
+            {
+              "slug": "security",
+              "title": "Angular Security"
+            },
+            {
+              "slug": "ssr-and-hydration",
+              "title": "SSR and Hydration"
+            },
+            {
+              "slug": "large-scale-architecture",
+              "title": "Large-Scale Architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "nodejs",
       "title": "Node.js Tutorial",
       "language": "Node.js",

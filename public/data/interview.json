@@ -17,6 +17,14 @@
       "draft": false
     },
     {
+      "slug": "angular",
+      "title": "Angular",
+      "icon": "angular",
+      "category": "Frontend",
+      "description": "Components, signals, change detection, DI, routing, forms, RxJS, performance, SSR, security and enterprise architecture.",
+      "draft": false
+    },
+    {
       "slug": "nodejs",
       "title": "Node.js",
       "icon": "nodejs",
@@ -33,19 +41,19 @@
       "draft": false
     },
     {
-      "slug": "mongodb",
-      "title": "MongoDB",
-      "icon": "mongodb",
-      "category": "Databases",
-      "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
-      "draft": false
-    },
-    {
       "slug": "sql",
       "title": "SQL",
       "icon": "sql",
       "category": "Databases",
       "description": "Joins, aggregation, NULLs, window functions, CTEs, indexes, transactions, normalisation and query optimisation.",
+      "draft": false
+    },
+    {
+      "slug": "mongodb",
+      "title": "MongoDB",
+      "icon": "mongodb",
+      "category": "Databases",
+      "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
       "draft": false
     }
   ]
