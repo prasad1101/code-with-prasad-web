@@ -71,6 +71,14 @@
       "category": "Databases",
       "description": "Data modelling, queries, indexes, aggregation, transactions, replication, sharding, performance and security.",
       "draft": false
+    },
+    {
+      "slug": "data-analytics",
+      "title": "Data Analytics",
+      "icon": "analytics",
+      "category": "Data",
+      "description": "Analysis process, data cleaning, SQL and pandas, statistics, A/B testing, metrics, dashboards and communication.",
+      "draft": false
     }
   ]
 }

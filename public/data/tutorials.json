@@ -1170,6 +1170,118 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "data-analytics",
+      "title": "Data Analytics Tutorial",
+      "language": "Data Analytics",
+      "icon": "analytics",
+      "category": "Data",
+      "description": "Analyse data with Python: NumPy and pandas, cleaning, transforming, grouping, joining, time series, visualisation, statistics, A/B testing, SQL and storytelling.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to Data Analytics"
+            },
+            {
+              "slug": "environment-setup",
+              "title": "Setting Up: Python, Jupyter and Libraries"
+            },
+            {
+              "slug": "numpy-basics",
+              "title": "NumPy Essentials"
+            },
+            {
+              "slug": "pandas-basics",
+              "title": "pandas Basics: Series and DataFrames"
+            },
+            {
+              "slug": "loading-data",
+              "title": "Loading and Saving Data"
+            }
+          ]
+        },
+        {
+          "title": "Wrangling Data",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "data-cleaning",
+              "title": "Data Cleaning"
+            },
+            {
+              "slug": "transforming-data",
+              "title": "Transforming Data"
+            },
+            {
+              "slug": "grouping-and-aggregation",
+              "title": "Grouping and Aggregation"
+            },
+            {
+              "slug": "merging-and-joining",
+              "title": "Merging and Joining"
+            },
+            {
+              "slug": "reshaping-data",
+              "title": "Reshaping: Pivot and Melt"
+            },
+            {
+              "slug": "time-series",
+              "title": "Time Series Analysis"
+            },
+            {
+              "slug": "data-visualization",
+              "title": "Data Visualisation"
+            }
+          ]
+        },
+        {
+          "title": "Statistics for Analysts",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "descriptive-statistics",
+              "title": "Descriptive Statistics"
+            },
+            {
+              "slug": "hypothesis-testing",
+              "title": "Hypothesis Testing"
+            },
+            {
+              "slug": "ab-testing",
+              "title": "A/B Testing"
+            },
+            {
+              "slug": "sql-for-analysts",
+              "title": "SQL and DuckDB for Analysts"
+            }
+          ]
+        },
+        {
+          "title": "Analytics in Practice",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "large-datasets",
+              "title": "Working with Large Datasets"
+            },
+            {
+              "slug": "dashboards-and-storytelling",
+              "title": "Dashboards and Data Storytelling"
+            },
+            {
+              "slug": "end-to-end-case-study",
+              "title": "End-to-End Case Study"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
