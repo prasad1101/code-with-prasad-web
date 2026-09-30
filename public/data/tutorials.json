@@ -550,6 +550,126 @@
       ]
     },
     {
+      "slug": "react",
+      "title": "React Tutorial",
+      "language": "React",
+      "icon": "react",
+      "category": "Frontend",
+      "description": "Modern React 19 from JSX and hooks to routing, data fetching, performance, Suspense, state management, testing, Server Components and architecture.",
+      "updatedAt": "2026-09-30",
+      "draft": false,
+      "chapters": [
+        {
+          "title": "Getting Started",
+          "level": "Beginner",
+          "lessons": [
+            {
+              "slug": "introduction",
+              "title": "Introduction to React"
+            },
+            {
+              "slug": "jsx",
+              "title": "JSX"
+            },
+            {
+              "slug": "components-and-props",
+              "title": "Components and Props"
+            },
+            {
+              "slug": "state-and-events",
+              "title": "State and Events"
+            },
+            {
+              "slug": "conditional-rendering-and-lists",
+              "title": "Conditional Rendering and Lists"
+            },
+            {
+              "slug": "forms",
+              "title": "Forms and Actions"
+            }
+          ]
+        },
+        {
+          "title": "Core React",
+          "level": "Intermediate",
+          "lessons": [
+            {
+              "slug": "effects",
+              "title": "Effects and When Not to Use Them"
+            },
+            {
+              "slug": "refs",
+              "title": "Refs and the DOM"
+            },
+            {
+              "slug": "context",
+              "title": "Context"
+            },
+            {
+              "slug": "reducers",
+              "title": "Managing State with Reducers"
+            },
+            {
+              "slug": "custom-hooks",
+              "title": "Custom Hooks"
+            },
+            {
+              "slug": "routing",
+              "title": "Routing with React Router"
+            },
+            {
+              "slug": "data-fetching",
+              "title": "Data Fetching with TanStack Query"
+            }
+          ]
+        },
+        {
+          "title": "Advanced React",
+          "level": "Advanced",
+          "lessons": [
+            {
+              "slug": "performance",
+              "title": "Performance and the React Compiler"
+            },
+            {
+              "slug": "suspense-and-code-splitting",
+              "title": "Suspense and Code Splitting"
+            },
+            {
+              "slug": "state-management",
+              "title": "State Management: Zustand and Redux Toolkit"
+            },
+            {
+              "slug": "testing",
+              "title": "Testing React Apps"
+            },
+            {
+              "slug": "typescript-with-react",
+              "title": "TypeScript with React"
+            }
+          ]
+        },
+        {
+          "title": "Expert React",
+          "level": "Expert",
+          "lessons": [
+            {
+              "slug": "server-components-and-ssr",
+              "title": "Server Components and SSR"
+            },
+            {
+              "slug": "transitions-and-concurrency",
+              "title": "Transitions and Concurrent Rendering"
+            },
+            {
+              "slug": "architecture-and-patterns",
+              "title": "Architecture and Patterns"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "nodejs",
       "title": "Node.js Tutorial",
       "language": "Node.js",

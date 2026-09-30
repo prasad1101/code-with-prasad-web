@@ -25,6 +25,14 @@
       "draft": false
     },
     {
+      "slug": "react",
+      "title": "React",
+      "icon": "react",
+      "category": "Frontend",
+      "description": "Rendering, hooks, effects, state, performance, Suspense, React 19 Actions, Server Components, testing and architecture.",
+      "draft": false
+    },
+    {
       "slug": "nodejs",
       "title": "Node.js",
       "icon": "nodejs",
