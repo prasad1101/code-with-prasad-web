@@ -1,0 +1,392 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens ---------- */
+:root {
+  --c-bg: #fafaff;
+  --c-surface: #ffffff;
+  --c-surface-2: #f1f1f9;
+  --c-line: rgb(18 18 40 / 0.1);
+  --c-fg: #12121f;
+  --c-muted: #50506a;
+  --c-accent: #6d28d9;
+  --c-accent-2: #0e7490;
+  --c-glow: rgb(109 40 217 / 0.18);
+  --c-code-bg: #f6f6fc;
+}
+
+.dark {
+  --c-bg: #07070d;
+  --c-surface: #0e0e18;
+  --c-surface-2: #161625;
+  --c-line: rgb(255 255 255 / 0.08);
+  --c-fg: #ececf4;
+  --c-muted: #a0a0b8;
+  --c-accent: #a78bfa;
+  --c-accent-2: #22d3ee;
+  --c-glow: rgb(139 92 246 / 0.28);
+  --c-code-bg: #0b0b14;
+}
+
+@theme inline {
+  --font-display: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-line: var(--c-line);
+  --color-fg: var(--c-fg);
+  --color-muted: var(--c-muted);
+  --color-accent: var(--c-accent);
+  --color-accent-2: var(--c-accent-2);
+  --color-glow: var(--c-glow);
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-bg text-fg font-sans antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--c-glow);
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-accent-2);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display tracking-tight;
+}
+
+@utility text-gradient {
+  background-image: linear-gradient(100deg, #8b5cf6 0%, #6366f1 40%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-accent {
+  background-image: linear-gradient(100deg, #7c3aed 0%, #4f46e5 45%, #0891b2 100%);
+}
+
+@utility glass {
+  background: color-mix(in oklab, var(--c-bg) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+}
+
+@utility card {
+  @apply border-line bg-surface rounded-2xl border;
+}
+
+/* Entrance animation for above-the-fold content. Plain CSS so it starts on first paint
+   (framer-motion's features load lazily, which would delay LCP). */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+.rise {
+  animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ---------- Background decoration ---------- */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, var(--c-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--c-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 30%, transparent 75%);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(40px, -30px, 0) scale(1.12);
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: var(--c-accent-2);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.skeleton {
+  @apply bg-surface-2 rounded-lg;
+  background-image: linear-gradient(90deg, transparent, var(--c-line), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* ---------- Rendered markdown ---------- */
+.md {
+  @apply text-fg/90 text-[1.0625rem] leading-[1.8];
+  overflow-wrap: anywhere;
+}
+.md > * + * {
+  margin-top: 1.15em;
+}
+.md h2 {
+  @apply text-fg mt-12 text-2xl font-semibold sm:text-[1.7rem];
+}
+.md h3 {
+  @apply text-fg mt-9 text-xl font-semibold;
+}
+.md h4 {
+  @apply text-fg mt-7 text-lg font-semibold;
+}
+.md h2,
+.md h3,
+.md h4 {
+  position: relative;
+  scroll-margin-top: 6rem;
+}
+.md .heading-anchor {
+  @apply text-accent ml-2 font-mono text-[0.8em] no-underline opacity-0 transition-opacity;
+}
+.md :is(h2, h3, h4):hover .heading-anchor,
+.md .heading-anchor:focus-visible {
+  opacity: 1;
+}
+.md a:not(.heading-anchor) {
+  @apply text-accent decoration-accent/40 hover:decoration-accent font-medium underline underline-offset-4 transition-colors;
+}
+.md strong {
+  @apply text-fg font-semibold;
+}
+.md ul,
+.md ol {
+  padding-left: 1.4em;
+}
+.md ul {
+  list-style: disc;
+}
+.md ol {
+  list-style: decimal;
+}
+.md li + li {
+  margin-top: 0.4em;
+}
+.md li::marker {
+  color: var(--c-accent);
+}
+.md blockquote {
+  @apply border-accent bg-surface-2 text-fg/85 rounded-r-xl border-l-4 px-5 py-3;
+}
+.md hr {
+  @apply border-line my-10;
+}
+.md img {
+  @apply border-line rounded-xl border;
+}
+.md table {
+  @apply block w-full overflow-x-auto text-[0.95rem];
+  border-collapse: collapse;
+}
+.md th,
+.md td {
+  @apply border-line border px-3 py-2 text-left;
+}
+.md th {
+  @apply bg-surface-2 font-semibold;
+}
+.md :not(pre) > code {
+  @apply border-line bg-surface-2 text-fg rounded-md border px-1.5 py-0.5 font-mono text-[0.86em];
+}
+
+.code-block {
+  @apply border-line overflow-hidden rounded-xl border;
+  background: var(--c-code-bg);
+}
+.md .code-block {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.code-head {
+  @apply border-line text-muted flex items-center justify-between border-b px-4 py-2 font-mono text-xs;
+}
+.copy-btn {
+  @apply border-line text-muted hover:border-accent hover:text-fg rounded-md border px-2.5 py-1 text-xs transition-colors;
+}
+.copy-btn[data-copied='true'] {
+  @apply border-accent-2 text-accent-2;
+}
+code,
+pre {
+  /* Show `=>` and `!==` as typed — clearer for learners. */
+  font-variant-ligatures: none;
+}
+.code-block pre {
+  @apply overflow-x-auto p-4 font-mono text-[0.86rem] leading-relaxed;
+}
+
+/* highlight.js tokens — tuned for both themes */
+.hljs {
+  color: var(--c-fg);
+}
+.hljs-comment,
+.hljs-quote {
+  color: #6a6a85;
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-doctag {
+  color: #7c3aed;
+}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-template-tag {
+  color: #0f766e;
+}
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet {
+  color: #c2410c;
+}
+.hljs-title,
+.hljs-title.function_,
+.hljs-section {
+  color: #1d4ed8;
+}
+.hljs-built_in,
+.hljs-type,
+.hljs-title.class_ {
+  color: #0e7490;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-property,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-params {
+  color: #9d174d;
+}
+.hljs-meta,
+.hljs-tag,
+.hljs-name {
+  color: #4b5563;
+}
+.hljs-deletion {
+  color: #b91c1c;
+}
+.dark .hljs-comment,
+.dark .hljs-quote {
+  color: #7d7d9c;
+}
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-doctag {
+  color: #c4b5fd;
+}
+.dark .hljs-string,
+.dark .hljs-regexp,
+.dark .hljs-addition,
+.dark .hljs-template-tag {
+  color: #86efac;
+}
+.dark .hljs-number,
+.dark .hljs-literal,
+.dark .hljs-symbol,
+.dark .hljs-bullet {
+  color: #fdba74;
+}
+.dark .hljs-title,
+.dark .hljs-title.function_,
+.dark .hljs-section {
+  color: #93c5fd;
+}
+.dark .hljs-built_in,
+.dark .hljs-type,
+.dark .hljs-title.class_ {
+  color: #67e8f9;
+}
+.dark .hljs-attr,
+.dark .hljs-attribute,
+.dark .hljs-property,
+.dark .hljs-variable,
+.dark .hljs-template-variable,
+.dark .hljs-params {
+  color: #f9a8d4;
+}
+.dark .hljs-meta,
+.dark .hljs-tag,
+.dark .hljs-name {
+  color: #a1a1b5;
+}
+.dark .hljs-deletion {
+  color: #fca5a5;
+}
+
+/* ---------- Motion preferences ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .caret {
+    animation: none;
+  }
+}
