@@ -38,6 +38,7 @@ npm run dev        # http://localhost:5173/code-with-prasad-web/
 | `npm run preview` | Serve the production build locally |
 | `npm run lint` | ESLint |
 | `npm run format` | Prettier |
+| `npm run deploy` | Build and push `dist/` to the `gh-pages` branch (deploy without Actions) |
 
 ## Where content lives
 
@@ -224,6 +225,8 @@ The authoritative definitions are the zod schemas in `src/lib/schemas.ts`. Summa
 Every push to `main` runs `.github/workflows/deploy.yml`: install → lint → build → upload `dist/` → deploy to GitHub Pages.
 
 **One-time setup:** in the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
+
+**Without GitHub Actions** (e.g. if Actions is disabled on the account): run `npm run deploy`. It builds locally and force-pushes `dist/` to the `gh-pages` branch. Set **Settings → Pages → Source** to **Deploy from a branch → `gh-pages` / `(root)`**. `public/.nojekyll` stops GitHub from running Jekyll on the output.
 
 The site uses hash routes (`/#/blog/…`) so every URL works on GitHub Pages without server rewrites. A generated `404.html` also redirects path-style URLs (e.g. `/code-with-prasad-web/blog/foo`) to their hash equivalent.
 
